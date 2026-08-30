@@ -1,0 +1,102 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+.streamlit/
+tesi.md
+deck_mmm.pptx
+.DS_Store
+
+# pipeline: dati generati/derivati (riproducibili con seed fisso)
+pipeline/data/raw/
+pipeline/data/canonical/
+pipeline/data/canonical_true/
+pipeline/data/output/
+pipeline/data/stress/
+pipeline/data/ground_truth.json
+
+# collaudo VM: output rigenerabile a ogni run
+vm_check/out/
+
+# ---------------------------------------------------------------------------
+# Il repo contiene SOLO il codice della tesi. I testi (capitoli, bozze,
+# appunti) restano sul PC e su Google Documenti.
+# ---------------------------------------------------------------------------
+tesi_v2.md
+Tesi_Capitoli_*.md
+Tesi_Capitolo_*.md
+Tesi_Introduzione_*.md
+Tesi_DellAcqua_*.docx
+report.md
+CONTESTO.md
+CLAUDE.md
+prompt_fable5_meridian_ingestion.md
+confronto_robyn_meridian/confronto_risultati.md
+
+# Cartelle di lavoro: testo della tesi e corrispondenza con l'azienda.
+# `archivio_tesi/` sono le versioni superate del testo (il documento corrente e'
+# Tesi_Introduzione_Capitoli_1-4_v3.md, gia' escluso sopra); `_lavoro/` sono
+# prompt, messaggi, richieste di accesso e ticket. Nessuno dei due va su GitHub.
+archivio_tesi/
+_lavoro/
+
+# Stato del progetto: nota di lavoro interna, non documentazione. Se il
+# repo dovra' mostrare uno stato, quello e' compito del README.md.
+STATO.md
+
+# ---------------------------------------------------------------------------
+# Materiale che vive nella stessa cartella ma NON fa parte della tesi:
+# resta sul PC, fuori dal repo.
+# ---------------------------------------------------------------------------
+# esami e appunti di studio
+Quiz_*_DataMining_TextAnalytics.pdf
+gramatica_espanola_*.md
+Guia_Marse_examen_oral.pdf
+
+# altri progetti
+sito-edilizia-gamba/
+sito-edilizia-gamba_brief.md
+agricampi.html
+
+# documenti personali e scarti
+CV_Giacomo_Dellacqua.md
+test_whatsapp.txt
+
+# ---------------------------------------------------------------------------
+# Dataset simulato del Capitolo 5.
+#
+# DECISIONE CAMBIATA. Prima questi CSV restavano fuori perche' rigenerabili dal
+# seed fisso. Non basta: l'Appendice A promette che il repository permette di
+# RIESEGUIRE la pipeline, e la riproducibilita' da seed dipende dalla versione
+# di numpy e dalla piattaforma. Fra due anni lo stesso comando potrebbe non
+# rigenerare file bit-identici. Per una tesi depositata servono i file esatti
+# che sono stati usati, non una ricetta che promette di riprodurli.
+#
+# DENTRO (~4,4 MB):
+#   modello/                          i 12 input del Cap. 5
+#   benchmark/                        ROAS di piattaforma e benchmark interno.
+#                                     Entra tutta, varianti comprese: 60 KB in
+#                                     totale, separarle costerebbe piu' della
+#                                     loro dimensione.
+#   verita/*.json                     parametri veri della generazione
+#   verita/contributo_vero.csv        il contributo incrementale vero dei media
+#   verita/candidature_organiche.csv  la baseline vera
+#
+# Le ultime due sono i file piu' importanti del repo. Sono LA VERITA', e sono
+# cio' che permette a un terzo di verificare il risultato principale del
+# Capitolo 6 - il modello sovra-attribuisce ai media. Senza, quell'affermazione
+# non e' controllabile da nessuno che non sia l'autore.
+#
+# FUORI (~15 MB, rigenerabile e non usato per il fit della tesi): le due
+# varianti diagnostiche del modello e i loro file di verita', le curve vere in
+# PNG, i canonici del lettore B e lo zip di distribuzione - che e' solo
+# modello/ compressa, quindi ora ridondante. I comandi per rigenerare tutto
+# questo stanno in dati_simulati/README.md.
+# ---------------------------------------------------------------------------
+dati_simulati/modello_diagnostica_q30/
+dati_simulati/modello_rumore_normale/
+dati_simulati/verita/*_diagnostica_q30.csv
+dati_simulati/verita/*_rumore_normale.csv
+dati_simulati/verita/*.txt
+dati_simulati/verita/curve*/
+dati_simulati/verita/_canonici_lettore_b/
+dati_simulati/dati_mmm_simulati.zip

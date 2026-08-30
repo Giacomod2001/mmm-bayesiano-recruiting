@@ -1,0 +1,2081 @@
+settimana,regione,richieste_clienti
+2024-01-01,Abruzzo,47
+2024-01-01,Basilicata,8
+2024-01-01,Calabria,74
+2024-01-01,Campania,187
+2024-01-01,Emilia-Romagna,165
+2024-01-01,Friuli-Venezia Giulia,39
+2024-01-01,Lazio,207
+2024-01-01,Liguria,16
+2024-01-01,Lombardia,321
+2024-01-01,Marche,69
+2024-01-01,Molise,1
+2024-01-01,Piemonte,165
+2024-01-01,Puglia,131
+2024-01-01,Sardegna,63
+2024-01-01,Sicilia,182
+2024-01-01,Toscana,119
+2024-01-01,Trentino-Alto Adige,52
+2024-01-01,Umbria,46
+2024-01-01,Valle d'Aosta,5
+2024-01-01,Veneto,152
+2024-01-08,Abruzzo,74
+2024-01-08,Basilicata,12
+2024-01-08,Calabria,80
+2024-01-08,Campania,247
+2024-01-08,Emilia-Romagna,150
+2024-01-08,Friuli-Venezia Giulia,71
+2024-01-08,Lazio,221
+2024-01-08,Liguria,81
+2024-01-08,Lombardia,322
+2024-01-08,Marche,50
+2024-01-08,Molise,0
+2024-01-08,Piemonte,140
+2024-01-08,Puglia,202
+2024-01-08,Sardegna,63
+2024-01-08,Sicilia,208
+2024-01-08,Toscana,95
+2024-01-08,Trentino-Alto Adige,30
+2024-01-08,Umbria,44
+2024-01-08,Valle d'Aosta,10
+2024-01-08,Veneto,186
+2024-01-15,Abruzzo,50
+2024-01-15,Basilicata,16
+2024-01-15,Calabria,77
+2024-01-15,Campania,215
+2024-01-15,Emilia-Romagna,180
+2024-01-15,Friuli-Venezia Giulia,58
+2024-01-15,Lazio,258
+2024-01-15,Liguria,69
+2024-01-15,Lombardia,473
+2024-01-15,Marche,66
+2024-01-15,Molise,24
+2024-01-15,Piemonte,207
+2024-01-15,Puglia,150
+2024-01-15,Sardegna,79
+2024-01-15,Sicilia,176
+2024-01-15,Toscana,134
+2024-01-15,Trentino-Alto Adige,37
+2024-01-15,Umbria,27
+2024-01-15,Valle d'Aosta,4
+2024-01-15,Veneto,219
+2024-01-22,Abruzzo,43
+2024-01-22,Basilicata,9
+2024-01-22,Calabria,33
+2024-01-22,Campania,257
+2024-01-22,Emilia-Romagna,171
+2024-01-22,Friuli-Venezia Giulia,37
+2024-01-22,Lazio,192
+2024-01-22,Liguria,77
+2024-01-22,Lombardia,337
+2024-01-22,Marche,55
+2024-01-22,Molise,19
+2024-01-22,Piemonte,144
+2024-01-22,Puglia,136
+2024-01-22,Sardegna,55
+2024-01-22,Sicilia,210
+2024-01-22,Toscana,152
+2024-01-22,Trentino-Alto Adige,56
+2024-01-22,Umbria,39
+2024-01-22,Valle d'Aosta,8
+2024-01-22,Veneto,182
+2024-01-29,Abruzzo,63
+2024-01-29,Basilicata,43
+2024-01-29,Calabria,75
+2024-01-29,Campania,242
+2024-01-29,Emilia-Romagna,175
+2024-01-29,Friuli-Venezia Giulia,59
+2024-01-29,Lazio,225
+2024-01-29,Liguria,29
+2024-01-29,Lombardia,443
+2024-01-29,Marche,63
+2024-01-29,Molise,16
+2024-01-29,Piemonte,171
+2024-01-29,Puglia,173
+2024-01-29,Sardegna,50
+2024-01-29,Sicilia,219
+2024-01-29,Toscana,147
+2024-01-29,Trentino-Alto Adige,23
+2024-01-29,Umbria,21
+2024-01-29,Valle d'Aosta,5
+2024-01-29,Veneto,203
+2024-02-05,Abruzzo,63
+2024-02-05,Basilicata,24
+2024-02-05,Calabria,89
+2024-02-05,Campania,261
+2024-02-05,Emilia-Romagna,151
+2024-02-05,Friuli-Venezia Giulia,23
+2024-02-05,Lazio,198
+2024-02-05,Liguria,67
+2024-02-05,Lombardia,405
+2024-02-05,Marche,25
+2024-02-05,Molise,14
+2024-02-05,Piemonte,184
+2024-02-05,Puglia,143
+2024-02-05,Sardegna,73
+2024-02-05,Sicilia,190
+2024-02-05,Toscana,120
+2024-02-05,Trentino-Alto Adige,14
+2024-02-05,Umbria,20
+2024-02-05,Valle d'Aosta,4
+2024-02-05,Veneto,189
+2024-02-12,Abruzzo,41
+2024-02-12,Basilicata,20
+2024-02-12,Calabria,82
+2024-02-12,Campania,204
+2024-02-12,Emilia-Romagna,203
+2024-02-12,Friuli-Venezia Giulia,44
+2024-02-12,Lazio,246
+2024-02-12,Liguria,70
+2024-02-12,Lombardia,431
+2024-02-12,Marche,76
+2024-02-12,Molise,4
+2024-02-12,Piemonte,145
+2024-02-12,Puglia,161
+2024-02-12,Sardegna,55
+2024-02-12,Sicilia,194
+2024-02-12,Toscana,160
+2024-02-12,Trentino-Alto Adige,49
+2024-02-12,Umbria,14
+2024-02-12,Valle d'Aosta,1
+2024-02-12,Veneto,201
+2024-02-19,Abruzzo,35
+2024-02-19,Basilicata,31
+2024-02-19,Calabria,84
+2024-02-19,Campania,250
+2024-02-19,Emilia-Romagna,191
+2024-02-19,Friuli-Venezia Giulia,41
+2024-02-19,Lazio,234
+2024-02-19,Liguria,95
+2024-02-19,Lombardia,407
+2024-02-19,Marche,46
+2024-02-19,Molise,10
+2024-02-19,Piemonte,185
+2024-02-19,Puglia,160
+2024-02-19,Sardegna,68
+2024-02-19,Sicilia,174
+2024-02-19,Toscana,141
+2024-02-19,Trentino-Alto Adige,64
+2024-02-19,Umbria,35
+2024-02-19,Valle d'Aosta,2
+2024-02-19,Veneto,236
+2024-02-26,Abruzzo,54
+2024-02-26,Basilicata,10
+2024-02-26,Calabria,88
+2024-02-26,Campania,225
+2024-02-26,Emilia-Romagna,180
+2024-02-26,Friuli-Venezia Giulia,42
+2024-02-26,Lazio,228
+2024-02-26,Liguria,12
+2024-02-26,Lombardia,348
+2024-02-26,Marche,77
+2024-02-26,Molise,11
+2024-02-26,Piemonte,178
+2024-02-26,Puglia,152
+2024-02-26,Sardegna,63
+2024-02-26,Sicilia,157
+2024-02-26,Toscana,173
+2024-02-26,Trentino-Alto Adige,68
+2024-02-26,Umbria,24
+2024-02-26,Valle d'Aosta,3
+2024-02-26,Veneto,171
+2024-03-04,Abruzzo,25
+2024-03-04,Basilicata,39
+2024-03-04,Calabria,69
+2024-03-04,Campania,229
+2024-03-04,Emilia-Romagna,152
+2024-03-04,Friuli-Venezia Giulia,46
+2024-03-04,Lazio,254
+2024-03-04,Liguria,62
+2024-03-04,Lombardia,390
+2024-03-04,Marche,71
+2024-03-04,Molise,10
+2024-03-04,Piemonte,168
+2024-03-04,Puglia,136
+2024-03-04,Sardegna,61
+2024-03-04,Sicilia,147
+2024-03-04,Toscana,178
+2024-03-04,Trentino-Alto Adige,30
+2024-03-04,Umbria,35
+2024-03-04,Valle d'Aosta,0
+2024-03-04,Veneto,164
+2024-03-11,Abruzzo,53
+2024-03-11,Basilicata,18
+2024-03-11,Calabria,46
+2024-03-11,Campania,233
+2024-03-11,Emilia-Romagna,208
+2024-03-11,Friuli-Venezia Giulia,33
+2024-03-11,Lazio,209
+2024-03-11,Liguria,69
+2024-03-11,Lombardia,408
+2024-03-11,Marche,48
+2024-03-11,Molise,16
+2024-03-11,Piemonte,164
+2024-03-11,Puglia,169
+2024-03-11,Sardegna,91
+2024-03-11,Sicilia,228
+2024-03-11,Toscana,133
+2024-03-11,Trentino-Alto Adige,38
+2024-03-11,Umbria,30
+2024-03-11,Valle d'Aosta,7
+2024-03-11,Veneto,197
+2024-03-18,Abruzzo,55
+2024-03-18,Basilicata,14
+2024-03-18,Calabria,73
+2024-03-18,Campania,187
+2024-03-18,Emilia-Romagna,182
+2024-03-18,Friuli-Venezia Giulia,37
+2024-03-18,Lazio,198
+2024-03-18,Liguria,60
+2024-03-18,Lombardia,407
+2024-03-18,Marche,52
+2024-03-18,Molise,11
+2024-03-18,Piemonte,153
+2024-03-18,Puglia,139
+2024-03-18,Sardegna,53
+2024-03-18,Sicilia,201
+2024-03-18,Toscana,150
+2024-03-18,Trentino-Alto Adige,15
+2024-03-18,Umbria,48
+2024-03-18,Valle d'Aosta,0
+2024-03-18,Veneto,169
+2024-03-25,Abruzzo,63
+2024-03-25,Basilicata,18
+2024-03-25,Calabria,84
+2024-03-25,Campania,240
+2024-03-25,Emilia-Romagna,160
+2024-03-25,Friuli-Venezia Giulia,58
+2024-03-25,Lazio,242
+2024-03-25,Liguria,61
+2024-03-25,Lombardia,399
+2024-03-25,Marche,92
+2024-03-25,Molise,10
+2024-03-25,Piemonte,194
+2024-03-25,Puglia,180
+2024-03-25,Sardegna,81
+2024-03-25,Sicilia,227
+2024-03-25,Toscana,148
+2024-03-25,Trentino-Alto Adige,43
+2024-03-25,Umbria,45
+2024-03-25,Valle d'Aosta,3
+2024-03-25,Veneto,176
+2024-04-01,Abruzzo,59
+2024-04-01,Basilicata,13
+2024-04-01,Calabria,69
+2024-04-01,Campania,224
+2024-04-01,Emilia-Romagna,176
+2024-04-01,Friuli-Venezia Giulia,48
+2024-04-01,Lazio,253
+2024-04-01,Liguria,81
+2024-04-01,Lombardia,375
+2024-04-01,Marche,63
+2024-04-01,Molise,12
+2024-04-01,Piemonte,177
+2024-04-01,Puglia,152
+2024-04-01,Sardegna,52
+2024-04-01,Sicilia,204
+2024-04-01,Toscana,132
+2024-04-01,Trentino-Alto Adige,48
+2024-04-01,Umbria,43
+2024-04-01,Valle d'Aosta,0
+2024-04-01,Veneto,213
+2024-04-08,Abruzzo,40
+2024-04-08,Basilicata,1
+2024-04-08,Calabria,79
+2024-04-08,Campania,225
+2024-04-08,Emilia-Romagna,188
+2024-04-08,Friuli-Venezia Giulia,43
+2024-04-08,Lazio,185
+2024-04-08,Liguria,71
+2024-04-08,Lombardia,387
+2024-04-08,Marche,76
+2024-04-08,Molise,8
+2024-04-08,Piemonte,199
+2024-04-08,Puglia,131
+2024-04-08,Sardegna,56
+2024-04-08,Sicilia,186
+2024-04-08,Toscana,146
+2024-04-08,Trentino-Alto Adige,38
+2024-04-08,Umbria,48
+2024-04-08,Valle d'Aosta,6
+2024-04-08,Veneto,208
+2024-04-15,Abruzzo,58
+2024-04-15,Basilicata,30
+2024-04-15,Calabria,96
+2024-04-15,Campania,239
+2024-04-15,Emilia-Romagna,138
+2024-04-15,Friuli-Venezia Giulia,55
+2024-04-15,Lazio,189
+2024-04-15,Liguria,67
+2024-04-15,Lombardia,364
+2024-04-15,Marche,63
+2024-04-15,Molise,10
+2024-04-15,Piemonte,196
+2024-04-15,Puglia,169
+2024-04-15,Sardegna,34
+2024-04-15,Sicilia,198
+2024-04-15,Toscana,178
+2024-04-15,Trentino-Alto Adige,45
+2024-04-15,Umbria,42
+2024-04-15,Valle d'Aosta,5
+2024-04-15,Veneto,183
+2024-04-22,Abruzzo,63
+2024-04-22,Basilicata,17
+2024-04-22,Calabria,75
+2024-04-22,Campania,170
+2024-04-22,Emilia-Romagna,180
+2024-04-22,Friuli-Venezia Giulia,49
+2024-04-22,Lazio,235
+2024-04-22,Liguria,59
+2024-04-22,Lombardia,389
+2024-04-22,Marche,46
+2024-04-22,Molise,15
+2024-04-22,Piemonte,174
+2024-04-22,Puglia,162
+2024-04-22,Sardegna,77
+2024-04-22,Sicilia,218
+2024-04-22,Toscana,117
+2024-04-22,Trentino-Alto Adige,48
+2024-04-22,Umbria,44
+2024-04-22,Valle d'Aosta,6
+2024-04-22,Veneto,207
+2024-04-29,Abruzzo,43
+2024-04-29,Basilicata,28
+2024-04-29,Calabria,45
+2024-04-29,Campania,234
+2024-04-29,Emilia-Romagna,148
+2024-04-29,Friuli-Venezia Giulia,53
+2024-04-29,Lazio,209
+2024-04-29,Liguria,80
+2024-04-29,Lombardia,398
+2024-04-29,Marche,53
+2024-04-29,Molise,9
+2024-04-29,Piemonte,210
+2024-04-29,Puglia,167
+2024-04-29,Sardegna,57
+2024-04-29,Sicilia,216
+2024-04-29,Toscana,161
+2024-04-29,Trentino-Alto Adige,44
+2024-04-29,Umbria,34
+2024-04-29,Valle d'Aosta,6
+2024-04-29,Veneto,201
+2024-05-06,Abruzzo,53
+2024-05-06,Basilicata,30
+2024-05-06,Calabria,60
+2024-05-06,Campania,219
+2024-05-06,Emilia-Romagna,211
+2024-05-06,Friuli-Venezia Giulia,58
+2024-05-06,Lazio,229
+2024-05-06,Liguria,75
+2024-05-06,Lombardia,379
+2024-05-06,Marche,37
+2024-05-06,Molise,4
+2024-05-06,Piemonte,169
+2024-05-06,Puglia,151
+2024-05-06,Sardegna,78
+2024-05-06,Sicilia,232
+2024-05-06,Toscana,163
+2024-05-06,Trentino-Alto Adige,45
+2024-05-06,Umbria,25
+2024-05-06,Valle d'Aosta,6
+2024-05-06,Veneto,229
+2024-05-13,Abruzzo,56
+2024-05-13,Basilicata,23
+2024-05-13,Calabria,73
+2024-05-13,Campania,178
+2024-05-13,Emilia-Romagna,213
+2024-05-13,Friuli-Venezia Giulia,43
+2024-05-13,Lazio,250
+2024-05-13,Liguria,33
+2024-05-13,Lombardia,412
+2024-05-13,Marche,61
+2024-05-13,Molise,12
+2024-05-13,Piemonte,201
+2024-05-13,Puglia,169
+2024-05-13,Sardegna,92
+2024-05-13,Sicilia,191
+2024-05-13,Toscana,124
+2024-05-13,Trentino-Alto Adige,44
+2024-05-13,Umbria,45
+2024-05-13,Valle d'Aosta,0
+2024-05-13,Veneto,195
+2024-05-20,Abruzzo,41
+2024-05-20,Basilicata,33
+2024-05-20,Calabria,108
+2024-05-20,Campania,231
+2024-05-20,Emilia-Romagna,128
+2024-05-20,Friuli-Venezia Giulia,48
+2024-05-20,Lazio,248
+2024-05-20,Liguria,40
+2024-05-20,Lombardia,438
+2024-05-20,Marche,85
+2024-05-20,Molise,21
+2024-05-20,Piemonte,187
+2024-05-20,Puglia,192
+2024-05-20,Sardegna,67
+2024-05-20,Sicilia,186
+2024-05-20,Toscana,171
+2024-05-20,Trentino-Alto Adige,57
+2024-05-20,Umbria,24
+2024-05-20,Valle d'Aosta,3
+2024-05-20,Veneto,217
+2024-05-27,Abruzzo,79
+2024-05-27,Basilicata,17
+2024-05-27,Calabria,91
+2024-05-27,Campania,204
+2024-05-27,Emilia-Romagna,205
+2024-05-27,Friuli-Venezia Giulia,46
+2024-05-27,Lazio,211
+2024-05-27,Liguria,52
+2024-05-27,Lombardia,470
+2024-05-27,Marche,64
+2024-05-27,Molise,2
+2024-05-27,Piemonte,164
+2024-05-27,Puglia,220
+2024-05-27,Sardegna,45
+2024-05-27,Sicilia,217
+2024-05-27,Toscana,224
+2024-05-27,Trentino-Alto Adige,31
+2024-05-27,Umbria,35
+2024-05-27,Valle d'Aosta,4
+2024-05-27,Veneto,238
+2024-06-03,Abruzzo,55
+2024-06-03,Basilicata,29
+2024-06-03,Calabria,73
+2024-06-03,Campania,220
+2024-06-03,Emilia-Romagna,205
+2024-06-03,Friuli-Venezia Giulia,46
+2024-06-03,Lazio,238
+2024-06-03,Liguria,43
+2024-06-03,Lombardia,354
+2024-06-03,Marche,52
+2024-06-03,Molise,13
+2024-06-03,Piemonte,206
+2024-06-03,Puglia,179
+2024-06-03,Sardegna,81
+2024-06-03,Sicilia,201
+2024-06-03,Toscana,107
+2024-06-03,Trentino-Alto Adige,62
+2024-06-03,Umbria,59
+2024-06-03,Valle d'Aosta,4
+2024-06-03,Veneto,222
+2024-06-10,Abruzzo,43
+2024-06-10,Basilicata,27
+2024-06-10,Calabria,53
+2024-06-10,Campania,266
+2024-06-10,Emilia-Romagna,266
+2024-06-10,Friuli-Venezia Giulia,45
+2024-06-10,Lazio,264
+2024-06-10,Liguria,86
+2024-06-10,Lombardia,408
+2024-06-10,Marche,55
+2024-06-10,Molise,8
+2024-06-10,Piemonte,162
+2024-06-10,Puglia,135
+2024-06-10,Sardegna,51
+2024-06-10,Sicilia,215
+2024-06-10,Toscana,176
+2024-06-10,Trentino-Alto Adige,75
+2024-06-10,Umbria,51
+2024-06-10,Valle d'Aosta,0
+2024-06-10,Veneto,192
+2024-06-17,Abruzzo,42
+2024-06-17,Basilicata,26
+2024-06-17,Calabria,80
+2024-06-17,Campania,291
+2024-06-17,Emilia-Romagna,168
+2024-06-17,Friuli-Venezia Giulia,75
+2024-06-17,Lazio,268
+2024-06-17,Liguria,79
+2024-06-17,Lombardia,416
+2024-06-17,Marche,58
+2024-06-17,Molise,14
+2024-06-17,Piemonte,150
+2024-06-17,Puglia,192
+2024-06-17,Sardegna,54
+2024-06-17,Sicilia,219
+2024-06-17,Toscana,151
+2024-06-17,Trentino-Alto Adige,47
+2024-06-17,Umbria,34
+2024-06-17,Valle d'Aosta,4
+2024-06-17,Veneto,211
+2024-06-24,Abruzzo,40
+2024-06-24,Basilicata,16
+2024-06-24,Calabria,71
+2024-06-24,Campania,231
+2024-06-24,Emilia-Romagna,221
+2024-06-24,Friuli-Venezia Giulia,46
+2024-06-24,Lazio,238
+2024-06-24,Liguria,57
+2024-06-24,Lombardia,460
+2024-06-24,Marche,54
+2024-06-24,Molise,8
+2024-06-24,Piemonte,189
+2024-06-24,Puglia,228
+2024-06-24,Sardegna,59
+2024-06-24,Sicilia,245
+2024-06-24,Toscana,161
+2024-06-24,Trentino-Alto Adige,51
+2024-06-24,Umbria,32
+2024-06-24,Valle d'Aosta,4
+2024-06-24,Veneto,217
+2024-07-01,Abruzzo,60
+2024-07-01,Basilicata,8
+2024-07-01,Calabria,88
+2024-07-01,Campania,242
+2024-07-01,Emilia-Romagna,184
+2024-07-01,Friuli-Venezia Giulia,47
+2024-07-01,Lazio,235
+2024-07-01,Liguria,68
+2024-07-01,Lombardia,419
+2024-07-01,Marche,72
+2024-07-01,Molise,16
+2024-07-01,Piemonte,179
+2024-07-01,Puglia,180
+2024-07-01,Sardegna,69
+2024-07-01,Sicilia,203
+2024-07-01,Toscana,163
+2024-07-01,Trentino-Alto Adige,39
+2024-07-01,Umbria,40
+2024-07-01,Valle d'Aosta,4
+2024-07-01,Veneto,265
+2024-07-08,Abruzzo,61
+2024-07-08,Basilicata,23
+2024-07-08,Calabria,95
+2024-07-08,Campania,234
+2024-07-08,Emilia-Romagna,233
+2024-07-08,Friuli-Venezia Giulia,60
+2024-07-08,Lazio,249
+2024-07-08,Liguria,79
+2024-07-08,Lombardia,464
+2024-07-08,Marche,84
+2024-07-08,Molise,19
+2024-07-08,Piemonte,140
+2024-07-08,Puglia,168
+2024-07-08,Sardegna,78
+2024-07-08,Sicilia,198
+2024-07-08,Toscana,124
+2024-07-08,Trentino-Alto Adige,25
+2024-07-08,Umbria,45
+2024-07-08,Valle d'Aosta,0
+2024-07-08,Veneto,201
+2024-07-15,Abruzzo,32
+2024-07-15,Basilicata,25
+2024-07-15,Calabria,85
+2024-07-15,Campania,280
+2024-07-15,Emilia-Romagna,199
+2024-07-15,Friuli-Venezia Giulia,58
+2024-07-15,Lazio,252
+2024-07-15,Liguria,37
+2024-07-15,Lombardia,361
+2024-07-15,Marche,89
+2024-07-15,Molise,12
+2024-07-15,Piemonte,157
+2024-07-15,Puglia,184
+2024-07-15,Sardegna,103
+2024-07-15,Sicilia,244
+2024-07-15,Toscana,190
+2024-07-15,Trentino-Alto Adige,59
+2024-07-15,Umbria,41
+2024-07-15,Valle d'Aosta,5
+2024-07-15,Veneto,244
+2024-07-22,Abruzzo,46
+2024-07-22,Basilicata,7
+2024-07-22,Calabria,79
+2024-07-22,Campania,242
+2024-07-22,Emilia-Romagna,183
+2024-07-22,Friuli-Venezia Giulia,40
+2024-07-22,Lazio,206
+2024-07-22,Liguria,55
+2024-07-22,Lombardia,382
+2024-07-22,Marche,72
+2024-07-22,Molise,9
+2024-07-22,Piemonte,183
+2024-07-22,Puglia,148
+2024-07-22,Sardegna,66
+2024-07-22,Sicilia,242
+2024-07-22,Toscana,156
+2024-07-22,Trentino-Alto Adige,53
+2024-07-22,Umbria,21
+2024-07-22,Valle d'Aosta,7
+2024-07-22,Veneto,217
+2024-07-29,Abruzzo,49
+2024-07-29,Basilicata,38
+2024-07-29,Calabria,86
+2024-07-29,Campania,226
+2024-07-29,Emilia-Romagna,199
+2024-07-29,Friuli-Venezia Giulia,63
+2024-07-29,Lazio,272
+2024-07-29,Liguria,69
+2024-07-29,Lombardia,362
+2024-07-29,Marche,82
+2024-07-29,Molise,10
+2024-07-29,Piemonte,148
+2024-07-29,Puglia,173
+2024-07-29,Sardegna,75
+2024-07-29,Sicilia,220
+2024-07-29,Toscana,142
+2024-07-29,Trentino-Alto Adige,39
+2024-07-29,Umbria,47
+2024-07-29,Valle d'Aosta,0
+2024-07-29,Veneto,189
+2024-08-05,Abruzzo,61
+2024-08-05,Basilicata,7
+2024-08-05,Calabria,74
+2024-08-05,Campania,218
+2024-08-05,Emilia-Romagna,159
+2024-08-05,Friuli-Venezia Giulia,33
+2024-08-05,Lazio,229
+2024-08-05,Liguria,90
+2024-08-05,Lombardia,360
+2024-08-05,Marche,61
+2024-08-05,Molise,6
+2024-08-05,Piemonte,182
+2024-08-05,Puglia,173
+2024-08-05,Sardegna,66
+2024-08-05,Sicilia,143
+2024-08-05,Toscana,173
+2024-08-05,Trentino-Alto Adige,45
+2024-08-05,Umbria,40
+2024-08-05,Valle d'Aosta,3
+2024-08-05,Veneto,186
+2024-08-12,Abruzzo,55
+2024-08-12,Basilicata,12
+2024-08-12,Calabria,79
+2024-08-12,Campania,235
+2024-08-12,Emilia-Romagna,171
+2024-08-12,Friuli-Venezia Giulia,50
+2024-08-12,Lazio,220
+2024-08-12,Liguria,38
+2024-08-12,Lombardia,367
+2024-08-12,Marche,77
+2024-08-12,Molise,14
+2024-08-12,Piemonte,114
+2024-08-12,Puglia,182
+2024-08-12,Sardegna,52
+2024-08-12,Sicilia,191
+2024-08-12,Toscana,167
+2024-08-12,Trentino-Alto Adige,45
+2024-08-12,Umbria,35
+2024-08-12,Valle d'Aosta,12
+2024-08-12,Veneto,199
+2024-08-19,Abruzzo,48
+2024-08-19,Basilicata,7
+2024-08-19,Calabria,62
+2024-08-19,Campania,271
+2024-08-19,Emilia-Romagna,155
+2024-08-19,Friuli-Venezia Giulia,65
+2024-08-19,Lazio,187
+2024-08-19,Liguria,45
+2024-08-19,Lombardia,317
+2024-08-19,Marche,66
+2024-08-19,Molise,10
+2024-08-19,Piemonte,146
+2024-08-19,Puglia,139
+2024-08-19,Sardegna,66
+2024-08-19,Sicilia,196
+2024-08-19,Toscana,52
+2024-08-19,Trentino-Alto Adige,53
+2024-08-19,Umbria,42
+2024-08-19,Valle d'Aosta,7
+2024-08-19,Veneto,194
+2024-08-26,Abruzzo,64
+2024-08-26,Basilicata,24
+2024-08-26,Calabria,93
+2024-08-26,Campania,231
+2024-08-26,Emilia-Romagna,129
+2024-08-26,Friuli-Venezia Giulia,36
+2024-08-26,Lazio,276
+2024-08-26,Liguria,47
+2024-08-26,Lombardia,386
+2024-08-26,Marche,83
+2024-08-26,Molise,13
+2024-08-26,Piemonte,203
+2024-08-26,Puglia,117
+2024-08-26,Sardegna,74
+2024-08-26,Sicilia,197
+2024-08-26,Toscana,155
+2024-08-26,Trentino-Alto Adige,43
+2024-08-26,Umbria,44
+2024-08-26,Valle d'Aosta,8
+2024-08-26,Veneto,190
+2024-09-02,Abruzzo,48
+2024-09-02,Basilicata,32
+2024-09-02,Calabria,55
+2024-09-02,Campania,220
+2024-09-02,Emilia-Romagna,191
+2024-09-02,Friuli-Venezia Giulia,61
+2024-09-02,Lazio,219
+2024-09-02,Liguria,42
+2024-09-02,Lombardia,425
+2024-09-02,Marche,67
+2024-09-02,Molise,9
+2024-09-02,Piemonte,178
+2024-09-02,Puglia,180
+2024-09-02,Sardegna,67
+2024-09-02,Sicilia,175
+2024-09-02,Toscana,168
+2024-09-02,Trentino-Alto Adige,38
+2024-09-02,Umbria,31
+2024-09-02,Valle d'Aosta,3
+2024-09-02,Veneto,233
+2024-09-09,Abruzzo,56
+2024-09-09,Basilicata,23
+2024-09-09,Calabria,45
+2024-09-09,Campania,292
+2024-09-09,Emilia-Romagna,152
+2024-09-09,Friuli-Venezia Giulia,50
+2024-09-09,Lazio,191
+2024-09-09,Liguria,53
+2024-09-09,Lombardia,384
+2024-09-09,Marche,107
+2024-09-09,Molise,16
+2024-09-09,Piemonte,165
+2024-09-09,Puglia,177
+2024-09-09,Sardegna,74
+2024-09-09,Sicilia,174
+2024-09-09,Toscana,155
+2024-09-09,Trentino-Alto Adige,49
+2024-09-09,Umbria,35
+2024-09-09,Valle d'Aosta,5
+2024-09-09,Veneto,213
+2024-09-16,Abruzzo,64
+2024-09-16,Basilicata,28
+2024-09-16,Calabria,90
+2024-09-16,Campania,213
+2024-09-16,Emilia-Romagna,169
+2024-09-16,Friuli-Venezia Giulia,66
+2024-09-16,Lazio,202
+2024-09-16,Liguria,35
+2024-09-16,Lombardia,467
+2024-09-16,Marche,73
+2024-09-16,Molise,3
+2024-09-16,Piemonte,150
+2024-09-16,Puglia,175
+2024-09-16,Sardegna,46
+2024-09-16,Sicilia,218
+2024-09-16,Toscana,112
+2024-09-16,Trentino-Alto Adige,23
+2024-09-16,Umbria,29
+2024-09-16,Valle d'Aosta,1
+2024-09-16,Veneto,238
+2024-09-23,Abruzzo,47
+2024-09-23,Basilicata,30
+2024-09-23,Calabria,58
+2024-09-23,Campania,264
+2024-09-23,Emilia-Romagna,197
+2024-09-23,Friuli-Venezia Giulia,56
+2024-09-23,Lazio,223
+2024-09-23,Liguria,67
+2024-09-23,Lombardia,401
+2024-09-23,Marche,61
+2024-09-23,Molise,22
+2024-09-23,Piemonte,207
+2024-09-23,Puglia,121
+2024-09-23,Sardegna,60
+2024-09-23,Sicilia,185
+2024-09-23,Toscana,173
+2024-09-23,Trentino-Alto Adige,60
+2024-09-23,Umbria,41
+2024-09-23,Valle d'Aosta,8
+2024-09-23,Veneto,227
+2024-09-30,Abruzzo,48
+2024-09-30,Basilicata,46
+2024-09-30,Calabria,88
+2024-09-30,Campania,227
+2024-09-30,Emilia-Romagna,139
+2024-09-30,Friuli-Venezia Giulia,21
+2024-09-30,Lazio,262
+2024-09-30,Liguria,77
+2024-09-30,Lombardia,378
+2024-09-30,Marche,44
+2024-09-30,Molise,26
+2024-09-30,Piemonte,181
+2024-09-30,Puglia,154
+2024-09-30,Sardegna,70
+2024-09-30,Sicilia,202
+2024-09-30,Toscana,117
+2024-09-30,Trentino-Alto Adige,60
+2024-09-30,Umbria,37
+2024-09-30,Valle d'Aosta,13
+2024-09-30,Veneto,224
+2024-10-07,Abruzzo,55
+2024-10-07,Basilicata,20
+2024-10-07,Calabria,99
+2024-10-07,Campania,226
+2024-10-07,Emilia-Romagna,186
+2024-10-07,Friuli-Venezia Giulia,42
+2024-10-07,Lazio,219
+2024-10-07,Liguria,62
+2024-10-07,Lombardia,338
+2024-10-07,Marche,58
+2024-10-07,Molise,12
+2024-10-07,Piemonte,176
+2024-10-07,Puglia,178
+2024-10-07,Sardegna,44
+2024-10-07,Sicilia,218
+2024-10-07,Toscana,180
+2024-10-07,Trentino-Alto Adige,65
+2024-10-07,Umbria,49
+2024-10-07,Valle d'Aosta,5
+2024-10-07,Veneto,219
+2024-10-14,Abruzzo,52
+2024-10-14,Basilicata,13
+2024-10-14,Calabria,79
+2024-10-14,Campania,213
+2024-10-14,Emilia-Romagna,202
+2024-10-14,Friuli-Venezia Giulia,59
+2024-10-14,Lazio,241
+2024-10-14,Liguria,83
+2024-10-14,Lombardia,437
+2024-10-14,Marche,88
+2024-10-14,Molise,13
+2024-10-14,Piemonte,187
+2024-10-14,Puglia,180
+2024-10-14,Sardegna,47
+2024-10-14,Sicilia,183
+2024-10-14,Toscana,177
+2024-10-14,Trentino-Alto Adige,27
+2024-10-14,Umbria,26
+2024-10-14,Valle d'Aosta,2
+2024-10-14,Veneto,236
+2024-10-21,Abruzzo,52
+2024-10-21,Basilicata,21
+2024-10-21,Calabria,72
+2024-10-21,Campania,244
+2024-10-21,Emilia-Romagna,131
+2024-10-21,Friuli-Venezia Giulia,70
+2024-10-21,Lazio,304
+2024-10-21,Liguria,61
+2024-10-21,Lombardia,475
+2024-10-21,Marche,52
+2024-10-21,Molise,13
+2024-10-21,Piemonte,192
+2024-10-21,Puglia,170
+2024-10-21,Sardegna,61
+2024-10-21,Sicilia,167
+2024-10-21,Toscana,136
+2024-10-21,Trentino-Alto Adige,41
+2024-10-21,Umbria,16
+2024-10-21,Valle d'Aosta,5
+2024-10-21,Veneto,207
+2024-10-28,Abruzzo,39
+2024-10-28,Basilicata,31
+2024-10-28,Calabria,73
+2024-10-28,Campania,306
+2024-10-28,Emilia-Romagna,215
+2024-10-28,Friuli-Venezia Giulia,62
+2024-10-28,Lazio,276
+2024-10-28,Liguria,97
+2024-10-28,Lombardia,497
+2024-10-28,Marche,50
+2024-10-28,Molise,6
+2024-10-28,Piemonte,158
+2024-10-28,Puglia,125
+2024-10-28,Sardegna,53
+2024-10-28,Sicilia,202
+2024-10-28,Toscana,103
+2024-10-28,Trentino-Alto Adige,52
+2024-10-28,Umbria,31
+2024-10-28,Valle d'Aosta,10
+2024-10-28,Veneto,280
+2024-11-04,Abruzzo,77
+2024-11-04,Basilicata,12
+2024-11-04,Calabria,84
+2024-11-04,Campania,261
+2024-11-04,Emilia-Romagna,264
+2024-11-04,Friuli-Venezia Giulia,76
+2024-11-04,Lazio,272
+2024-11-04,Liguria,63
+2024-11-04,Lombardia,426
+2024-11-04,Marche,57
+2024-11-04,Molise,21
+2024-11-04,Piemonte,186
+2024-11-04,Puglia,166
+2024-11-04,Sardegna,58
+2024-11-04,Sicilia,216
+2024-11-04,Toscana,162
+2024-11-04,Trentino-Alto Adige,47
+2024-11-04,Umbria,52
+2024-11-04,Valle d'Aosta,6
+2024-11-04,Veneto,238
+2024-11-11,Abruzzo,43
+2024-11-11,Basilicata,10
+2024-11-11,Calabria,60
+2024-11-11,Campania,257
+2024-11-11,Emilia-Romagna,197
+2024-11-11,Friuli-Venezia Giulia,61
+2024-11-11,Lazio,262
+2024-11-11,Liguria,38
+2024-11-11,Lombardia,446
+2024-11-11,Marche,93
+2024-11-11,Molise,5
+2024-11-11,Piemonte,123
+2024-11-11,Puglia,173
+2024-11-11,Sardegna,55
+2024-11-11,Sicilia,188
+2024-11-11,Toscana,189
+2024-11-11,Trentino-Alto Adige,61
+2024-11-11,Umbria,35
+2024-11-11,Valle d'Aosta,2
+2024-11-11,Veneto,189
+2024-11-18,Abruzzo,54
+2024-11-18,Basilicata,24
+2024-11-18,Calabria,65
+2024-11-18,Campania,199
+2024-11-18,Emilia-Romagna,226
+2024-11-18,Friuli-Venezia Giulia,65
+2024-11-18,Lazio,265
+2024-11-18,Liguria,67
+2024-11-18,Lombardia,503
+2024-11-18,Marche,62
+2024-11-18,Molise,22
+2024-11-18,Piemonte,154
+2024-11-18,Puglia,155
+2024-11-18,Sardegna,88
+2024-11-18,Sicilia,216
+2024-11-18,Toscana,184
+2024-11-18,Trentino-Alto Adige,52
+2024-11-18,Umbria,23
+2024-11-18,Valle d'Aosta,1
+2024-11-18,Veneto,208
+2024-11-25,Abruzzo,77
+2024-11-25,Basilicata,24
+2024-11-25,Calabria,116
+2024-11-25,Campania,189
+2024-11-25,Emilia-Romagna,210
+2024-11-25,Friuli-Venezia Giulia,54
+2024-11-25,Lazio,210
+2024-11-25,Liguria,50
+2024-11-25,Lombardia,448
+2024-11-25,Marche,82
+2024-11-25,Molise,0
+2024-11-25,Piemonte,196
+2024-11-25,Puglia,131
+2024-11-25,Sardegna,65
+2024-11-25,Sicilia,227
+2024-11-25,Toscana,129
+2024-11-25,Trentino-Alto Adige,44
+2024-11-25,Umbria,38
+2024-11-25,Valle d'Aosta,0
+2024-11-25,Veneto,186
+2024-12-02,Abruzzo,55
+2024-12-02,Basilicata,14
+2024-12-02,Calabria,101
+2024-12-02,Campania,215
+2024-12-02,Emilia-Romagna,209
+2024-12-02,Friuli-Venezia Giulia,77
+2024-12-02,Lazio,238
+2024-12-02,Liguria,84
+2024-12-02,Lombardia,392
+2024-12-02,Marche,63
+2024-12-02,Molise,16
+2024-12-02,Piemonte,212
+2024-12-02,Puglia,168
+2024-12-02,Sardegna,44
+2024-12-02,Sicilia,181
+2024-12-02,Toscana,121
+2024-12-02,Trentino-Alto Adige,44
+2024-12-02,Umbria,33
+2024-12-02,Valle d'Aosta,6
+2024-12-02,Veneto,226
+2024-12-09,Abruzzo,26
+2024-12-09,Basilicata,29
+2024-12-09,Calabria,44
+2024-12-09,Campania,240
+2024-12-09,Emilia-Romagna,139
+2024-12-09,Friuli-Venezia Giulia,42
+2024-12-09,Lazio,294
+2024-12-09,Liguria,56
+2024-12-09,Lombardia,393
+2024-12-09,Marche,37
+2024-12-09,Molise,7
+2024-12-09,Piemonte,182
+2024-12-09,Puglia,109
+2024-12-09,Sardegna,65
+2024-12-09,Sicilia,154
+2024-12-09,Toscana,143
+2024-12-09,Trentino-Alto Adige,49
+2024-12-09,Umbria,31
+2024-12-09,Valle d'Aosta,4
+2024-12-09,Veneto,216
+2024-12-16,Abruzzo,15
+2024-12-16,Basilicata,29
+2024-12-16,Calabria,35
+2024-12-16,Campania,192
+2024-12-16,Emilia-Romagna,140
+2024-12-16,Friuli-Venezia Giulia,37
+2024-12-16,Lazio,217
+2024-12-16,Liguria,51
+2024-12-16,Lombardia,367
+2024-12-16,Marche,31
+2024-12-16,Molise,6
+2024-12-16,Piemonte,166
+2024-12-16,Puglia,158
+2024-12-16,Sardegna,74
+2024-12-16,Sicilia,222
+2024-12-16,Toscana,128
+2024-12-16,Trentino-Alto Adige,44
+2024-12-16,Umbria,37
+2024-12-16,Valle d'Aosta,9
+2024-12-16,Veneto,181
+2024-12-23,Abruzzo,78
+2024-12-23,Basilicata,18
+2024-12-23,Calabria,56
+2024-12-23,Campania,166
+2024-12-23,Emilia-Romagna,151
+2024-12-23,Friuli-Venezia Giulia,39
+2024-12-23,Lazio,197
+2024-12-23,Liguria,57
+2024-12-23,Lombardia,328
+2024-12-23,Marche,34
+2024-12-23,Molise,7
+2024-12-23,Piemonte,126
+2024-12-23,Puglia,158
+2024-12-23,Sardegna,56
+2024-12-23,Sicilia,148
+2024-12-23,Toscana,158
+2024-12-23,Trentino-Alto Adige,29
+2024-12-23,Umbria,35
+2024-12-23,Valle d'Aosta,14
+2024-12-23,Veneto,172
+2024-12-30,Abruzzo,62
+2024-12-30,Basilicata,13
+2024-12-30,Calabria,69
+2024-12-30,Campania,220
+2024-12-30,Emilia-Romagna,172
+2024-12-30,Friuli-Venezia Giulia,32
+2024-12-30,Lazio,198
+2024-12-30,Liguria,40
+2024-12-30,Lombardia,400
+2024-12-30,Marche,45
+2024-12-30,Molise,9
+2024-12-30,Piemonte,134
+2024-12-30,Puglia,133
+2024-12-30,Sardegna,81
+2024-12-30,Sicilia,166
+2024-12-30,Toscana,100
+2024-12-30,Trentino-Alto Adige,54
+2024-12-30,Umbria,41
+2024-12-30,Valle d'Aosta,8
+2024-12-30,Veneto,200
+2025-01-06,Abruzzo,60
+2025-01-06,Basilicata,11
+2025-01-06,Calabria,71
+2025-01-06,Campania,228
+2025-01-06,Emilia-Romagna,214
+2025-01-06,Friuli-Venezia Giulia,29
+2025-01-06,Lazio,190
+2025-01-06,Liguria,62
+2025-01-06,Lombardia,405
+2025-01-06,Marche,77
+2025-01-06,Molise,10
+2025-01-06,Piemonte,154
+2025-01-06,Puglia,169
+2025-01-06,Sardegna,55
+2025-01-06,Sicilia,174
+2025-01-06,Toscana,134
+2025-01-06,Trentino-Alto Adige,59
+2025-01-06,Umbria,40
+2025-01-06,Valle d'Aosta,3
+2025-01-06,Veneto,233
+2025-01-13,Abruzzo,56
+2025-01-13,Basilicata,16
+2025-01-13,Calabria,76
+2025-01-13,Campania,255
+2025-01-13,Emilia-Romagna,159
+2025-01-13,Friuli-Venezia Giulia,52
+2025-01-13,Lazio,199
+2025-01-13,Liguria,79
+2025-01-13,Lombardia,394
+2025-01-13,Marche,66
+2025-01-13,Molise,13
+2025-01-13,Piemonte,209
+2025-01-13,Puglia,151
+2025-01-13,Sardegna,64
+2025-01-13,Sicilia,218
+2025-01-13,Toscana,198
+2025-01-13,Trentino-Alto Adige,54
+2025-01-13,Umbria,40
+2025-01-13,Valle d'Aosta,6
+2025-01-13,Veneto,157
+2025-01-20,Abruzzo,40
+2025-01-20,Basilicata,21
+2025-01-20,Calabria,98
+2025-01-20,Campania,190
+2025-01-20,Emilia-Romagna,181
+2025-01-20,Friuli-Venezia Giulia,24
+2025-01-20,Lazio,232
+2025-01-20,Liguria,44
+2025-01-20,Lombardia,405
+2025-01-20,Marche,31
+2025-01-20,Molise,5
+2025-01-20,Piemonte,193
+2025-01-20,Puglia,152
+2025-01-20,Sardegna,64
+2025-01-20,Sicilia,197
+2025-01-20,Toscana,151
+2025-01-20,Trentino-Alto Adige,35
+2025-01-20,Umbria,48
+2025-01-20,Valle d'Aosta,14
+2025-01-20,Veneto,181
+2025-01-27,Abruzzo,56
+2025-01-27,Basilicata,29
+2025-01-27,Calabria,83
+2025-01-27,Campania,242
+2025-01-27,Emilia-Romagna,184
+2025-01-27,Friuli-Venezia Giulia,50
+2025-01-27,Lazio,233
+2025-01-27,Liguria,76
+2025-01-27,Lombardia,392
+2025-01-27,Marche,44
+2025-01-27,Molise,8
+2025-01-27,Piemonte,201
+2025-01-27,Puglia,138
+2025-01-27,Sardegna,80
+2025-01-27,Sicilia,201
+2025-01-27,Toscana,147
+2025-01-27,Trentino-Alto Adige,40
+2025-01-27,Umbria,35
+2025-01-27,Valle d'Aosta,8
+2025-01-27,Veneto,188
+2025-02-03,Abruzzo,36
+2025-02-03,Basilicata,34
+2025-02-03,Calabria,102
+2025-02-03,Campania,254
+2025-02-03,Emilia-Romagna,192
+2025-02-03,Friuli-Venezia Giulia,57
+2025-02-03,Lazio,214
+2025-02-03,Liguria,56
+2025-02-03,Lombardia,495
+2025-02-03,Marche,46
+2025-02-03,Molise,14
+2025-02-03,Piemonte,168
+2025-02-03,Puglia,158
+2025-02-03,Sardegna,58
+2025-02-03,Sicilia,183
+2025-02-03,Toscana,118
+2025-02-03,Trentino-Alto Adige,50
+2025-02-03,Umbria,30
+2025-02-03,Valle d'Aosta,5
+2025-02-03,Veneto,218
+2025-02-10,Abruzzo,36
+2025-02-10,Basilicata,19
+2025-02-10,Calabria,62
+2025-02-10,Campania,230
+2025-02-10,Emilia-Romagna,182
+2025-02-10,Friuli-Venezia Giulia,46
+2025-02-10,Lazio,283
+2025-02-10,Liguria,70
+2025-02-10,Lombardia,360
+2025-02-10,Marche,64
+2025-02-10,Molise,2
+2025-02-10,Piemonte,185
+2025-02-10,Puglia,136
+2025-02-10,Sardegna,56
+2025-02-10,Sicilia,203
+2025-02-10,Toscana,119
+2025-02-10,Trentino-Alto Adige,51
+2025-02-10,Umbria,29
+2025-02-10,Valle d'Aosta,1
+2025-02-10,Veneto,185
+2025-02-17,Abruzzo,40
+2025-02-17,Basilicata,14
+2025-02-17,Calabria,77
+2025-02-17,Campania,280
+2025-02-17,Emilia-Romagna,197
+2025-02-17,Friuli-Venezia Giulia,40
+2025-02-17,Lazio,222
+2025-02-17,Liguria,40
+2025-02-17,Lombardia,404
+2025-02-17,Marche,55
+2025-02-17,Molise,8
+2025-02-17,Piemonte,189
+2025-02-17,Puglia,154
+2025-02-17,Sardegna,70
+2025-02-17,Sicilia,208
+2025-02-17,Toscana,152
+2025-02-17,Trentino-Alto Adige,47
+2025-02-17,Umbria,33
+2025-02-17,Valle d'Aosta,8
+2025-02-17,Veneto,217
+2025-02-24,Abruzzo,41
+2025-02-24,Basilicata,33
+2025-02-24,Calabria,71
+2025-02-24,Campania,232
+2025-02-24,Emilia-Romagna,192
+2025-02-24,Friuli-Venezia Giulia,62
+2025-02-24,Lazio,252
+2025-02-24,Liguria,64
+2025-02-24,Lombardia,403
+2025-02-24,Marche,43
+2025-02-24,Molise,20
+2025-02-24,Piemonte,196
+2025-02-24,Puglia,151
+2025-02-24,Sardegna,74
+2025-02-24,Sicilia,180
+2025-02-24,Toscana,174
+2025-02-24,Trentino-Alto Adige,60
+2025-02-24,Umbria,48
+2025-02-24,Valle d'Aosta,9
+2025-02-24,Veneto,209
+2025-03-03,Abruzzo,68
+2025-03-03,Basilicata,24
+2025-03-03,Calabria,38
+2025-03-03,Campania,205
+2025-03-03,Emilia-Romagna,155
+2025-03-03,Friuli-Venezia Giulia,51
+2025-03-03,Lazio,261
+2025-03-03,Liguria,56
+2025-03-03,Lombardia,425
+2025-03-03,Marche,57
+2025-03-03,Molise,21
+2025-03-03,Piemonte,178
+2025-03-03,Puglia,129
+2025-03-03,Sardegna,62
+2025-03-03,Sicilia,191
+2025-03-03,Toscana,149
+2025-03-03,Trentino-Alto Adige,36
+2025-03-03,Umbria,42
+2025-03-03,Valle d'Aosta,10
+2025-03-03,Veneto,188
+2025-03-10,Abruzzo,42
+2025-03-10,Basilicata,21
+2025-03-10,Calabria,87
+2025-03-10,Campania,202
+2025-03-10,Emilia-Romagna,215
+2025-03-10,Friuli-Venezia Giulia,43
+2025-03-10,Lazio,222
+2025-03-10,Liguria,67
+2025-03-10,Lombardia,334
+2025-03-10,Marche,75
+2025-03-10,Molise,28
+2025-03-10,Piemonte,219
+2025-03-10,Puglia,178
+2025-03-10,Sardegna,79
+2025-03-10,Sicilia,195
+2025-03-10,Toscana,150
+2025-03-10,Trentino-Alto Adige,30
+2025-03-10,Umbria,28
+2025-03-10,Valle d'Aosta,1
+2025-03-10,Veneto,216
+2025-03-17,Abruzzo,49
+2025-03-17,Basilicata,19
+2025-03-17,Calabria,78
+2025-03-17,Campania,240
+2025-03-17,Emilia-Romagna,207
+2025-03-17,Friuli-Venezia Giulia,32
+2025-03-17,Lazio,240
+2025-03-17,Liguria,76
+2025-03-17,Lombardia,448
+2025-03-17,Marche,91
+2025-03-17,Molise,11
+2025-03-17,Piemonte,196
+2025-03-17,Puglia,112
+2025-03-17,Sardegna,65
+2025-03-17,Sicilia,190
+2025-03-17,Toscana,177
+2025-03-17,Trentino-Alto Adige,52
+2025-03-17,Umbria,27
+2025-03-17,Valle d'Aosta,3
+2025-03-17,Veneto,177
+2025-03-24,Abruzzo,63
+2025-03-24,Basilicata,27
+2025-03-24,Calabria,42
+2025-03-24,Campania,195
+2025-03-24,Emilia-Romagna,178
+2025-03-24,Friuli-Venezia Giulia,60
+2025-03-24,Lazio,190
+2025-03-24,Liguria,67
+2025-03-24,Lombardia,386
+2025-03-24,Marche,60
+2025-03-24,Molise,13
+2025-03-24,Piemonte,178
+2025-03-24,Puglia,108
+2025-03-24,Sardegna,111
+2025-03-24,Sicilia,229
+2025-03-24,Toscana,155
+2025-03-24,Trentino-Alto Adige,36
+2025-03-24,Umbria,36
+2025-03-24,Valle d'Aosta,2
+2025-03-24,Veneto,198
+2025-03-31,Abruzzo,66
+2025-03-31,Basilicata,17
+2025-03-31,Calabria,82
+2025-03-31,Campania,261
+2025-03-31,Emilia-Romagna,205
+2025-03-31,Friuli-Venezia Giulia,51
+2025-03-31,Lazio,220
+2025-03-31,Liguria,85
+2025-03-31,Lombardia,469
+2025-03-31,Marche,53
+2025-03-31,Molise,16
+2025-03-31,Piemonte,155
+2025-03-31,Puglia,149
+2025-03-31,Sardegna,91
+2025-03-31,Sicilia,183
+2025-03-31,Toscana,148
+2025-03-31,Trentino-Alto Adige,50
+2025-03-31,Umbria,35
+2025-03-31,Valle d'Aosta,6
+2025-03-31,Veneto,215
+2025-04-07,Abruzzo,24
+2025-04-07,Basilicata,27
+2025-04-07,Calabria,77
+2025-04-07,Campania,160
+2025-04-07,Emilia-Romagna,170
+2025-04-07,Friuli-Venezia Giulia,60
+2025-04-07,Lazio,256
+2025-04-07,Liguria,64
+2025-04-07,Lombardia,388
+2025-04-07,Marche,68
+2025-04-07,Molise,10
+2025-04-07,Piemonte,171
+2025-04-07,Puglia,124
+2025-04-07,Sardegna,54
+2025-04-07,Sicilia,222
+2025-04-07,Toscana,171
+2025-04-07,Trentino-Alto Adige,39
+2025-04-07,Umbria,22
+2025-04-07,Valle d'Aosta,9
+2025-04-07,Veneto,188
+2025-04-14,Abruzzo,68
+2025-04-14,Basilicata,23
+2025-04-14,Calabria,61
+2025-04-14,Campania,250
+2025-04-14,Emilia-Romagna,175
+2025-04-14,Friuli-Venezia Giulia,42
+2025-04-14,Lazio,236
+2025-04-14,Liguria,43
+2025-04-14,Lombardia,433
+2025-04-14,Marche,53
+2025-04-14,Molise,0
+2025-04-14,Piemonte,151
+2025-04-14,Puglia,250
+2025-04-14,Sardegna,62
+2025-04-14,Sicilia,229
+2025-04-14,Toscana,104
+2025-04-14,Trentino-Alto Adige,43
+2025-04-14,Umbria,18
+2025-04-14,Valle d'Aosta,0
+2025-04-14,Veneto,188
+2025-04-21,Abruzzo,74
+2025-04-21,Basilicata,32
+2025-04-21,Calabria,63
+2025-04-21,Campania,246
+2025-04-21,Emilia-Romagna,188
+2025-04-21,Friuli-Venezia Giulia,38
+2025-04-21,Lazio,182
+2025-04-21,Liguria,81
+2025-04-21,Lombardia,455
+2025-04-21,Marche,63
+2025-04-21,Molise,8
+2025-04-21,Piemonte,171
+2025-04-21,Puglia,165
+2025-04-21,Sardegna,84
+2025-04-21,Sicilia,194
+2025-04-21,Toscana,137
+2025-04-21,Trentino-Alto Adige,48
+2025-04-21,Umbria,36
+2025-04-21,Valle d'Aosta,8
+2025-04-21,Veneto,131
+2025-04-28,Abruzzo,43
+2025-04-28,Basilicata,22
+2025-04-28,Calabria,54
+2025-04-28,Campania,245
+2025-04-28,Emilia-Romagna,159
+2025-04-28,Friuli-Venezia Giulia,43
+2025-04-28,Lazio,227
+2025-04-28,Liguria,89
+2025-04-28,Lombardia,400
+2025-04-28,Marche,71
+2025-04-28,Molise,2
+2025-04-28,Piemonte,216
+2025-04-28,Puglia,148
+2025-04-28,Sardegna,57
+2025-04-28,Sicilia,190
+2025-04-28,Toscana,135
+2025-04-28,Trentino-Alto Adige,32
+2025-04-28,Umbria,47
+2025-04-28,Valle d'Aosta,4
+2025-04-28,Veneto,185
+2025-05-05,Abruzzo,75
+2025-05-05,Basilicata,13
+2025-05-05,Calabria,81
+2025-05-05,Campania,183
+2025-05-05,Emilia-Romagna,157
+2025-05-05,Friuli-Venezia Giulia,51
+2025-05-05,Lazio,259
+2025-05-05,Liguria,56
+2025-05-05,Lombardia,485
+2025-05-05,Marche,47
+2025-05-05,Molise,8
+2025-05-05,Piemonte,159
+2025-05-05,Puglia,165
+2025-05-05,Sardegna,92
+2025-05-05,Sicilia,248
+2025-05-05,Toscana,130
+2025-05-05,Trentino-Alto Adige,32
+2025-05-05,Umbria,14
+2025-05-05,Valle d'Aosta,8
+2025-05-05,Veneto,240
+2025-05-12,Abruzzo,51
+2025-05-12,Basilicata,24
+2025-05-12,Calabria,88
+2025-05-12,Campania,208
+2025-05-12,Emilia-Romagna,186
+2025-05-12,Friuli-Venezia Giulia,33
+2025-05-12,Lazio,265
+2025-05-12,Liguria,62
+2025-05-12,Lombardia,407
+2025-05-12,Marche,62
+2025-05-12,Molise,9
+2025-05-12,Piemonte,181
+2025-05-12,Puglia,156
+2025-05-12,Sardegna,87
+2025-05-12,Sicilia,172
+2025-05-12,Toscana,194
+2025-05-12,Trentino-Alto Adige,50
+2025-05-12,Umbria,43
+2025-05-12,Valle d'Aosta,0
+2025-05-12,Veneto,203
+2025-05-19,Abruzzo,34
+2025-05-19,Basilicata,24
+2025-05-19,Calabria,55
+2025-05-19,Campania,275
+2025-05-19,Emilia-Romagna,215
+2025-05-19,Friuli-Venezia Giulia,53
+2025-05-19,Lazio,219
+2025-05-19,Liguria,67
+2025-05-19,Lombardia,419
+2025-05-19,Marche,40
+2025-05-19,Molise,14
+2025-05-19,Piemonte,160
+2025-05-19,Puglia,182
+2025-05-19,Sardegna,84
+2025-05-19,Sicilia,184
+2025-05-19,Toscana,134
+2025-05-19,Trentino-Alto Adige,51
+2025-05-19,Umbria,22
+2025-05-19,Valle d'Aosta,7
+2025-05-19,Veneto,211
+2025-05-26,Abruzzo,51
+2025-05-26,Basilicata,26
+2025-05-26,Calabria,77
+2025-05-26,Campania,203
+2025-05-26,Emilia-Romagna,170
+2025-05-26,Friuli-Venezia Giulia,64
+2025-05-26,Lazio,254
+2025-05-26,Liguria,76
+2025-05-26,Lombardia,423
+2025-05-26,Marche,55
+2025-05-26,Molise,17
+2025-05-26,Piemonte,187
+2025-05-26,Puglia,148
+2025-05-26,Sardegna,91
+2025-05-26,Sicilia,245
+2025-05-26,Toscana,140
+2025-05-26,Trentino-Alto Adige,51
+2025-05-26,Umbria,44
+2025-05-26,Valle d'Aosta,5
+2025-05-26,Veneto,262
+2025-06-02,Abruzzo,50
+2025-06-02,Basilicata,23
+2025-06-02,Calabria,121
+2025-06-02,Campania,222
+2025-06-02,Emilia-Romagna,198
+2025-06-02,Friuli-Venezia Giulia,58
+2025-06-02,Lazio,271
+2025-06-02,Liguria,55
+2025-06-02,Lombardia,469
+2025-06-02,Marche,64
+2025-06-02,Molise,9
+2025-06-02,Piemonte,206
+2025-06-02,Puglia,150
+2025-06-02,Sardegna,74
+2025-06-02,Sicilia,213
+2025-06-02,Toscana,160
+2025-06-02,Trentino-Alto Adige,59
+2025-06-02,Umbria,32
+2025-06-02,Valle d'Aosta,2
+2025-06-02,Veneto,184
+2025-06-09,Abruzzo,75
+2025-06-09,Basilicata,9
+2025-06-09,Calabria,85
+2025-06-09,Campania,267
+2025-06-09,Emilia-Romagna,196
+2025-06-09,Friuli-Venezia Giulia,52
+2025-06-09,Lazio,254
+2025-06-09,Liguria,61
+2025-06-09,Lombardia,452
+2025-06-09,Marche,31
+2025-06-09,Molise,17
+2025-06-09,Piemonte,220
+2025-06-09,Puglia,175
+2025-06-09,Sardegna,83
+2025-06-09,Sicilia,210
+2025-06-09,Toscana,170
+2025-06-09,Trentino-Alto Adige,37
+2025-06-09,Umbria,36
+2025-06-09,Valle d'Aosta,9
+2025-06-09,Veneto,164
+2025-06-16,Abruzzo,48
+2025-06-16,Basilicata,18
+2025-06-16,Calabria,125
+2025-06-16,Campania,273
+2025-06-16,Emilia-Romagna,192
+2025-06-16,Friuli-Venezia Giulia,76
+2025-06-16,Lazio,287
+2025-06-16,Liguria,60
+2025-06-16,Lombardia,432
+2025-06-16,Marche,86
+2025-06-16,Molise,20
+2025-06-16,Piemonte,184
+2025-06-16,Puglia,197
+2025-06-16,Sardegna,82
+2025-06-16,Sicilia,248
+2025-06-16,Toscana,152
+2025-06-16,Trentino-Alto Adige,39
+2025-06-16,Umbria,37
+2025-06-16,Valle d'Aosta,0
+2025-06-16,Veneto,260
+2025-06-23,Abruzzo,60
+2025-06-23,Basilicata,17
+2025-06-23,Calabria,82
+2025-06-23,Campania,209
+2025-06-23,Emilia-Romagna,190
+2025-06-23,Friuli-Venezia Giulia,69
+2025-06-23,Lazio,206
+2025-06-23,Liguria,49
+2025-06-23,Lombardia,425
+2025-06-23,Marche,88
+2025-06-23,Molise,15
+2025-06-23,Piemonte,158
+2025-06-23,Puglia,181
+2025-06-23,Sardegna,71
+2025-06-23,Sicilia,208
+2025-06-23,Toscana,140
+2025-06-23,Trentino-Alto Adige,48
+2025-06-23,Umbria,31
+2025-06-23,Valle d'Aosta,2
+2025-06-23,Veneto,214
+2025-06-30,Abruzzo,59
+2025-06-30,Basilicata,25
+2025-06-30,Calabria,87
+2025-06-30,Campania,297
+2025-06-30,Emilia-Romagna,236
+2025-06-30,Friuli-Venezia Giulia,62
+2025-06-30,Lazio,296
+2025-06-30,Liguria,106
+2025-06-30,Lombardia,417
+2025-06-30,Marche,87
+2025-06-30,Molise,11
+2025-06-30,Piemonte,211
+2025-06-30,Puglia,206
+2025-06-30,Sardegna,82
+2025-06-30,Sicilia,245
+2025-06-30,Toscana,195
+2025-06-30,Trentino-Alto Adige,56
+2025-06-30,Umbria,48
+2025-06-30,Valle d'Aosta,4
+2025-06-30,Veneto,226
+2025-07-07,Abruzzo,50
+2025-07-07,Basilicata,12
+2025-07-07,Calabria,91
+2025-07-07,Campania,276
+2025-07-07,Emilia-Romagna,194
+2025-07-07,Friuli-Venezia Giulia,56
+2025-07-07,Lazio,333
+2025-07-07,Liguria,71
+2025-07-07,Lombardia,474
+2025-07-07,Marche,73
+2025-07-07,Molise,14
+2025-07-07,Piemonte,168
+2025-07-07,Puglia,168
+2025-07-07,Sardegna,48
+2025-07-07,Sicilia,214
+2025-07-07,Toscana,121
+2025-07-07,Trentino-Alto Adige,56
+2025-07-07,Umbria,41
+2025-07-07,Valle d'Aosta,7
+2025-07-07,Veneto,212
+2025-07-14,Abruzzo,57
+2025-07-14,Basilicata,23
+2025-07-14,Calabria,93
+2025-07-14,Campania,267
+2025-07-14,Emilia-Romagna,177
+2025-07-14,Friuli-Venezia Giulia,71
+2025-07-14,Lazio,269
+2025-07-14,Liguria,52
+2025-07-14,Lombardia,436
+2025-07-14,Marche,84
+2025-07-14,Molise,6
+2025-07-14,Piemonte,121
+2025-07-14,Puglia,155
+2025-07-14,Sardegna,103
+2025-07-14,Sicilia,196
+2025-07-14,Toscana,179
+2025-07-14,Trentino-Alto Adige,48
+2025-07-14,Umbria,61
+2025-07-14,Valle d'Aosta,11
+2025-07-14,Veneto,223
+2025-07-21,Abruzzo,49
+2025-07-21,Basilicata,32
+2025-07-21,Calabria,54
+2025-07-21,Campania,227
+2025-07-21,Emilia-Romagna,199
+2025-07-21,Friuli-Venezia Giulia,29
+2025-07-21,Lazio,246
+2025-07-21,Liguria,42
+2025-07-21,Lombardia,415
+2025-07-21,Marche,61
+2025-07-21,Molise,12
+2025-07-21,Piemonte,182
+2025-07-21,Puglia,174
+2025-07-21,Sardegna,85
+2025-07-21,Sicilia,192
+2025-07-21,Toscana,126
+2025-07-21,Trentino-Alto Adige,67
+2025-07-21,Umbria,26
+2025-07-21,Valle d'Aosta,4
+2025-07-21,Veneto,225
+2025-07-28,Abruzzo,43
+2025-07-28,Basilicata,10
+2025-07-28,Calabria,81
+2025-07-28,Campania,213
+2025-07-28,Emilia-Romagna,232
+2025-07-28,Friuli-Venezia Giulia,52
+2025-07-28,Lazio,279
+2025-07-28,Liguria,60
+2025-07-28,Lombardia,418
+2025-07-28,Marche,56
+2025-07-28,Molise,8
+2025-07-28,Piemonte,140
+2025-07-28,Puglia,186
+2025-07-28,Sardegna,80
+2025-07-28,Sicilia,197
+2025-07-28,Toscana,144
+2025-07-28,Trentino-Alto Adige,56
+2025-07-28,Umbria,29
+2025-07-28,Valle d'Aosta,4
+2025-07-28,Veneto,254
+2025-08-04,Abruzzo,51
+2025-08-04,Basilicata,16
+2025-08-04,Calabria,69
+2025-08-04,Campania,273
+2025-08-04,Emilia-Romagna,183
+2025-08-04,Friuli-Venezia Giulia,45
+2025-08-04,Lazio,190
+2025-08-04,Liguria,29
+2025-08-04,Lombardia,416
+2025-08-04,Marche,36
+2025-08-04,Molise,10
+2025-08-04,Piemonte,145
+2025-08-04,Puglia,181
+2025-08-04,Sardegna,65
+2025-08-04,Sicilia,227
+2025-08-04,Toscana,157
+2025-08-04,Trentino-Alto Adige,52
+2025-08-04,Umbria,41
+2025-08-04,Valle d'Aosta,8
+2025-08-04,Veneto,233
+2025-08-11,Abruzzo,49
+2025-08-11,Basilicata,9
+2025-08-11,Calabria,76
+2025-08-11,Campania,229
+2025-08-11,Emilia-Romagna,183
+2025-08-11,Friuli-Venezia Giulia,36
+2025-08-11,Lazio,243
+2025-08-11,Liguria,47
+2025-08-11,Lombardia,432
+2025-08-11,Marche,74
+2025-08-11,Molise,21
+2025-08-11,Piemonte,162
+2025-08-11,Puglia,131
+2025-08-11,Sardegna,69
+2025-08-11,Sicilia,216
+2025-08-11,Toscana,117
+2025-08-11,Trentino-Alto Adige,31
+2025-08-11,Umbria,47
+2025-08-11,Valle d'Aosta,11
+2025-08-11,Veneto,209
+2025-08-18,Abruzzo,51
+2025-08-18,Basilicata,12
+2025-08-18,Calabria,85
+2025-08-18,Campania,202
+2025-08-18,Emilia-Romagna,235
+2025-08-18,Friuli-Venezia Giulia,66
+2025-08-18,Lazio,210
+2025-08-18,Liguria,66
+2025-08-18,Lombardia,370
+2025-08-18,Marche,63
+2025-08-18,Molise,18
+2025-08-18,Piemonte,174
+2025-08-18,Puglia,157
+2025-08-18,Sardegna,76
+2025-08-18,Sicilia,215
+2025-08-18,Toscana,123
+2025-08-18,Trentino-Alto Adige,39
+2025-08-18,Umbria,33
+2025-08-18,Valle d'Aosta,5
+2025-08-18,Veneto,240
+2025-08-25,Abruzzo,47
+2025-08-25,Basilicata,19
+2025-08-25,Calabria,64
+2025-08-25,Campania,240
+2025-08-25,Emilia-Romagna,140
+2025-08-25,Friuli-Venezia Giulia,46
+2025-08-25,Lazio,249
+2025-08-25,Liguria,70
+2025-08-25,Lombardia,429
+2025-08-25,Marche,55
+2025-08-25,Molise,10
+2025-08-25,Piemonte,178
+2025-08-25,Puglia,159
+2025-08-25,Sardegna,64
+2025-08-25,Sicilia,178
+2025-08-25,Toscana,148
+2025-08-25,Trentino-Alto Adige,23
+2025-08-25,Umbria,36
+2025-08-25,Valle d'Aosta,2
+2025-08-25,Veneto,204
+2025-09-01,Abruzzo,55
+2025-09-01,Basilicata,24
+2025-09-01,Calabria,68
+2025-09-01,Campania,270
+2025-09-01,Emilia-Romagna,146
+2025-09-01,Friuli-Venezia Giulia,64
+2025-09-01,Lazio,243
+2025-09-01,Liguria,52
+2025-09-01,Lombardia,458
+2025-09-01,Marche,77
+2025-09-01,Molise,8
+2025-09-01,Piemonte,236
+2025-09-01,Puglia,160
+2025-09-01,Sardegna,56
+2025-09-01,Sicilia,191
+2025-09-01,Toscana,122
+2025-09-01,Trentino-Alto Adige,33
+2025-09-01,Umbria,18
+2025-09-01,Valle d'Aosta,9
+2025-09-01,Veneto,202
+2025-09-08,Abruzzo,51
+2025-09-08,Basilicata,12
+2025-09-08,Calabria,69
+2025-09-08,Campania,194
+2025-09-08,Emilia-Romagna,166
+2025-09-08,Friuli-Venezia Giulia,40
+2025-09-08,Lazio,270
+2025-09-08,Liguria,55
+2025-09-08,Lombardia,475
+2025-09-08,Marche,45
+2025-09-08,Molise,8
+2025-09-08,Piemonte,191
+2025-09-08,Puglia,161
+2025-09-08,Sardegna,63
+2025-09-08,Sicilia,207
+2025-09-08,Toscana,148
+2025-09-08,Trentino-Alto Adige,20
+2025-09-08,Umbria,13
+2025-09-08,Valle d'Aosta,13
+2025-09-08,Veneto,243
+2025-09-15,Abruzzo,64
+2025-09-15,Basilicata,26
+2025-09-15,Calabria,78
+2025-09-15,Campania,256
+2025-09-15,Emilia-Romagna,172
+2025-09-15,Friuli-Venezia Giulia,47
+2025-09-15,Lazio,274
+2025-09-15,Liguria,76
+2025-09-15,Lombardia,438
+2025-09-15,Marche,57
+2025-09-15,Molise,21
+2025-09-15,Piemonte,167
+2025-09-15,Puglia,173
+2025-09-15,Sardegna,97
+2025-09-15,Sicilia,213
+2025-09-15,Toscana,156
+2025-09-15,Trentino-Alto Adige,31
+2025-09-15,Umbria,41
+2025-09-15,Valle d'Aosta,1
+2025-09-15,Veneto,170
+2025-09-22,Abruzzo,50
+2025-09-22,Basilicata,20
+2025-09-22,Calabria,68
+2025-09-22,Campania,242
+2025-09-22,Emilia-Romagna,197
+2025-09-22,Friuli-Venezia Giulia,59
+2025-09-22,Lazio,268
+2025-09-22,Liguria,80
+2025-09-22,Lombardia,430
+2025-09-22,Marche,70
+2025-09-22,Molise,1
+2025-09-22,Piemonte,191
+2025-09-22,Puglia,161
+2025-09-22,Sardegna,47
+2025-09-22,Sicilia,192
+2025-09-22,Toscana,151
+2025-09-22,Trentino-Alto Adige,51
+2025-09-22,Umbria,36
+2025-09-22,Valle d'Aosta,4
+2025-09-22,Veneto,187
+2025-09-29,Abruzzo,68
+2025-09-29,Basilicata,44
+2025-09-29,Calabria,77
+2025-09-29,Campania,241
+2025-09-29,Emilia-Romagna,205
+2025-09-29,Friuli-Venezia Giulia,35
+2025-09-29,Lazio,223
+2025-09-29,Liguria,71
+2025-09-29,Lombardia,480
+2025-09-29,Marche,63
+2025-09-29,Molise,14
+2025-09-29,Piemonte,180
+2025-09-29,Puglia,178
+2025-09-29,Sardegna,61
+2025-09-29,Sicilia,197
+2025-09-29,Toscana,221
+2025-09-29,Trentino-Alto Adige,48
+2025-09-29,Umbria,32
+2025-09-29,Valle d'Aosta,8
+2025-09-29,Veneto,180
+2025-10-06,Abruzzo,38
+2025-10-06,Basilicata,16
+2025-10-06,Calabria,105
+2025-10-06,Campania,236
+2025-10-06,Emilia-Romagna,202
+2025-10-06,Friuli-Venezia Giulia,49
+2025-10-06,Lazio,285
+2025-10-06,Liguria,56
+2025-10-06,Lombardia,421
+2025-10-06,Marche,72
+2025-10-06,Molise,9
+2025-10-06,Piemonte,187
+2025-10-06,Puglia,165
+2025-10-06,Sardegna,70
+2025-10-06,Sicilia,208
+2025-10-06,Toscana,117
+2025-10-06,Trentino-Alto Adige,31
+2025-10-06,Umbria,27
+2025-10-06,Valle d'Aosta,7
+2025-10-06,Veneto,232
+2025-10-13,Abruzzo,55
+2025-10-13,Basilicata,12
+2025-10-13,Calabria,87
+2025-10-13,Campania,280
+2025-10-13,Emilia-Romagna,216
+2025-10-13,Friuli-Venezia Giulia,66
+2025-10-13,Lazio,226
+2025-10-13,Liguria,60
+2025-10-13,Lombardia,529
+2025-10-13,Marche,55
+2025-10-13,Molise,14
+2025-10-13,Piemonte,159
+2025-10-13,Puglia,152
+2025-10-13,Sardegna,49
+2025-10-13,Sicilia,178
+2025-10-13,Toscana,170
+2025-10-13,Trentino-Alto Adige,54
+2025-10-13,Umbria,48
+2025-10-13,Valle d'Aosta,3
+2025-10-13,Veneto,214
+2025-10-20,Abruzzo,53
+2025-10-20,Basilicata,35
+2025-10-20,Calabria,99
+2025-10-20,Campania,265
+2025-10-20,Emilia-Romagna,202
+2025-10-20,Friuli-Venezia Giulia,55
+2025-10-20,Lazio,264
+2025-10-20,Liguria,49
+2025-10-20,Lombardia,476
+2025-10-20,Marche,42
+2025-10-20,Molise,12
+2025-10-20,Piemonte,192
+2025-10-20,Puglia,151
+2025-10-20,Sardegna,65
+2025-10-20,Sicilia,250
+2025-10-20,Toscana,145
+2025-10-20,Trentino-Alto Adige,50
+2025-10-20,Umbria,44
+2025-10-20,Valle d'Aosta,0
+2025-10-20,Veneto,241
+2025-10-27,Abruzzo,47
+2025-10-27,Basilicata,16
+2025-10-27,Calabria,85
+2025-10-27,Campania,262
+2025-10-27,Emilia-Romagna,231
+2025-10-27,Friuli-Venezia Giulia,42
+2025-10-27,Lazio,233
+2025-10-27,Liguria,58
+2025-10-27,Lombardia,508
+2025-10-27,Marche,63
+2025-10-27,Molise,0
+2025-10-27,Piemonte,196
+2025-10-27,Puglia,163
+2025-10-27,Sardegna,55
+2025-10-27,Sicilia,219
+2025-10-27,Toscana,169
+2025-10-27,Trentino-Alto Adige,49
+2025-10-27,Umbria,32
+2025-10-27,Valle d'Aosta,2
+2025-10-27,Veneto,193
+2025-11-03,Abruzzo,61
+2025-11-03,Basilicata,32
+2025-11-03,Calabria,87
+2025-11-03,Campania,242
+2025-11-03,Emilia-Romagna,199
+2025-11-03,Friuli-Venezia Giulia,51
+2025-11-03,Lazio,273
+2025-11-03,Liguria,68
+2025-11-03,Lombardia,502
+2025-11-03,Marche,82
+2025-11-03,Molise,12
+2025-11-03,Piemonte,186
+2025-11-03,Puglia,117
+2025-11-03,Sardegna,80
+2025-11-03,Sicilia,181
+2025-11-03,Toscana,161
+2025-11-03,Trentino-Alto Adige,44
+2025-11-03,Umbria,9
+2025-11-03,Valle d'Aosta,9
+2025-11-03,Veneto,250
+2025-11-10,Abruzzo,58
+2025-11-10,Basilicata,13
+2025-11-10,Calabria,77
+2025-11-10,Campania,265
+2025-11-10,Emilia-Romagna,188
+2025-11-10,Friuli-Venezia Giulia,76
+2025-11-10,Lazio,265
+2025-11-10,Liguria,85
+2025-11-10,Lombardia,444
+2025-11-10,Marche,83
+2025-11-10,Molise,18
+2025-11-10,Piemonte,186
+2025-11-10,Puglia,172
+2025-11-10,Sardegna,79
+2025-11-10,Sicilia,176
+2025-11-10,Toscana,120
+2025-11-10,Trentino-Alto Adige,29
+2025-11-10,Umbria,33
+2025-11-10,Valle d'Aosta,4
+2025-11-10,Veneto,212
+2025-11-17,Abruzzo,39
+2025-11-17,Basilicata,33
+2025-11-17,Calabria,90
+2025-11-17,Campania,266
+2025-11-17,Emilia-Romagna,197
+2025-11-17,Friuli-Venezia Giulia,73
+2025-11-17,Lazio,273
+2025-11-17,Liguria,47
+2025-11-17,Lombardia,502
+2025-11-17,Marche,56
+2025-11-17,Molise,2
+2025-11-17,Piemonte,239
+2025-11-17,Puglia,160
+2025-11-17,Sardegna,51
+2025-11-17,Sicilia,213
+2025-11-17,Toscana,173
+2025-11-17,Trentino-Alto Adige,41
+2025-11-17,Umbria,20
+2025-11-17,Valle d'Aosta,2
+2025-11-17,Veneto,236
+2025-11-24,Abruzzo,70
+2025-11-24,Basilicata,47
+2025-11-24,Calabria,48
+2025-11-24,Campania,248
+2025-11-24,Emilia-Romagna,184
+2025-11-24,Friuli-Venezia Giulia,54
+2025-11-24,Lazio,212
+2025-11-24,Liguria,71
+2025-11-24,Lombardia,455
+2025-11-24,Marche,73
+2025-11-24,Molise,0
+2025-11-24,Piemonte,211
+2025-11-24,Puglia,129
+2025-11-24,Sardegna,70
+2025-11-24,Sicilia,256
+2025-11-24,Toscana,123
+2025-11-24,Trentino-Alto Adige,43
+2025-11-24,Umbria,34
+2025-11-24,Valle d'Aosta,5
+2025-11-24,Veneto,180
+2025-12-01,Abruzzo,50
+2025-12-01,Basilicata,27
+2025-12-01,Calabria,82
+2025-12-01,Campania,212
+2025-12-01,Emilia-Romagna,156
+2025-12-01,Friuli-Venezia Giulia,53
+2025-12-01,Lazio,254
+2025-12-01,Liguria,78
+2025-12-01,Lombardia,475
+2025-12-01,Marche,88
+2025-12-01,Molise,10
+2025-12-01,Piemonte,184
+2025-12-01,Puglia,157
+2025-12-01,Sardegna,52
+2025-12-01,Sicilia,225
+2025-12-01,Toscana,177
+2025-12-01,Trentino-Alto Adige,42
+2025-12-01,Umbria,48
+2025-12-01,Valle d'Aosta,3
+2025-12-01,Veneto,190
+2025-12-08,Abruzzo,69
+2025-12-08,Basilicata,26
+2025-12-08,Calabria,88
+2025-12-08,Campania,228
+2025-12-08,Emilia-Romagna,182
+2025-12-08,Friuli-Venezia Giulia,59
+2025-12-08,Lazio,221
+2025-12-08,Liguria,63
+2025-12-08,Lombardia,485
+2025-12-08,Marche,65
+2025-12-08,Molise,1
+2025-12-08,Piemonte,170
+2025-12-08,Puglia,144
+2025-12-08,Sardegna,59
+2025-12-08,Sicilia,177
+2025-12-08,Toscana,158
+2025-12-08,Trentino-Alto Adige,30
+2025-12-08,Umbria,33
+2025-12-08,Valle d'Aosta,5
+2025-12-08,Veneto,262
+2025-12-15,Abruzzo,49
+2025-12-15,Basilicata,10
+2025-12-15,Calabria,45
+2025-12-15,Campania,228
+2025-12-15,Emilia-Romagna,205
+2025-12-15,Friuli-Venezia Giulia,26
+2025-12-15,Lazio,228
+2025-12-15,Liguria,38
+2025-12-15,Lombardia,373
+2025-12-15,Marche,73
+2025-12-15,Molise,10
+2025-12-15,Piemonte,147
+2025-12-15,Puglia,206
+2025-12-15,Sardegna,85
+2025-12-15,Sicilia,170
+2025-12-15,Toscana,137
+2025-12-15,Trentino-Alto Adige,33
+2025-12-15,Umbria,35
+2025-12-15,Valle d'Aosta,0
+2025-12-15,Veneto,200
+2025-12-22,Abruzzo,16
+2025-12-22,Basilicata,27
+2025-12-22,Calabria,70
+2025-12-22,Campania,167
+2025-12-22,Emilia-Romagna,192
+2025-12-22,Friuli-Venezia Giulia,36
+2025-12-22,Lazio,241
+2025-12-22,Liguria,25
+2025-12-22,Lombardia,324
+2025-12-22,Marche,40
+2025-12-22,Molise,10
+2025-12-22,Piemonte,163
+2025-12-22,Puglia,145
+2025-12-22,Sardegna,34
+2025-12-22,Sicilia,146
+2025-12-22,Toscana,116
+2025-12-22,Trentino-Alto Adige,17
+2025-12-22,Umbria,27
+2025-12-22,Valle d'Aosta,0
+2025-12-22,Veneto,163
