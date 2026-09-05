@@ -38,6 +38,6 @@ EOF
 
 echo
 echo "Setup completato. Prossimi passi:"
-echo "  1. copia kaggle_end_to_end.ipynb e i file dati sulla VM (scp o drag&drop Jupyter)"
+echo "  1. copia colab_end_to_end.ipynb e i file dati sulla VM (scp o drag&drop Jupyter)"
 echo "  2. avvia:  bash setup_vm.sh jupyter"
 echo "  3. nel notebook, alla cella dati, indica la cartella dove hai messo i file"

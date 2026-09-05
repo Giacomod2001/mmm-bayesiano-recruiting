@@ -6,7 +6,7 @@ Non lancia il fit Meridian. Esegue, in ordine:
 
   1. mappa dei ruoli   cosa vede l'ingestion in ogni colonna di ogni file
   2. ingestion vera    celle CONFIG + ingestion + harmonization del notebook
-                       kaggle_end_to_end.ipynb, eseguite qui senza modificarlo
+                       colab_end_to_end.ipynb, eseguite qui senza modificarlo
   3. lettore B         pipeline/ingestion + validazione di schema
   4. collinearita'     corr spesa/stagionalita', corr spesa/spesa, VIF,
                        contrasto geografico, settimane a zero
@@ -34,7 +34,7 @@ import numpy as np
 import pandas as pd
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
-NOTEBOOK = os.path.join(ROOT, "kaggle_end_to_end.ipynb")
+NOTEBOOK = os.path.join(ROOT, "colab_end_to_end.ipynb")
 
 # celle del notebook riusate (indici nel file .ipynb)
 CELLA_CONFIG = 4
@@ -144,7 +144,7 @@ def mappa_ruoli(ns: dict, cartella: str, log: Tee) -> None:
 def ingestion_notebook(ns: dict, cartella: str, log: Tee,
                        interattivo: bool = False) -> dict:
     log("\n" + "=" * 78)
-    log("2. INGESTION VERA (celle 3, 5 e 6 di kaggle_end_to_end.ipynb)")
+    log("2. INGESTION VERA (celle 3, 5 e 6 di colab_end_to_end.ipynb)")
     log("=" * 78)
     ns["FILES_GREZZI"] = leggi_cartella(cartella)
     log(f"  {len(ns['FILES_GREZZI'])} file da {cartella}")

@@ -24,8 +24,6 @@ Tre cose, in ordine di sforzo crescente.
 [`colab_end_to_end.ipynb`](colab_end_to_end.ipynb) su Colab con GPU, puntalo su
 `dati_simulati/modello/` ed esegui le celle in ordine. È il deliverable: fa
 ingestion, fit, analisi, confronto col benchmark, allocazione ed export Excel.
-Il gemello [`kaggle_end_to_end.ipynb`](kaggle_end_to_end.ipynb) è identico salvo
-il modo di caricare i file.
 
 **2. Verificare il risultato principale.** In `dati_simulati/verita/` ci sono i
 file che dicono quanto i media hanno *davvero* generato nel mondo simulato. La
@@ -72,7 +70,6 @@ toccare il codice.
 
 ```
 colab_end_to_end.ipynb      il deliverable: pipeline completa su Colab
-kaggle_end_to_end.ipynb     lo stesso per Kaggle
 
 genera_dati_simulati.py     costruisce il mondo simulato (seed 42)
 verifica_dati_simulati.py   controlla che il mondo generato sia quello atteso

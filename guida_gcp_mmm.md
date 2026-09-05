@@ -2,7 +2,8 @@
 
 Aggiornata a luglio 2026. Contesto: account/organizzazione GCP aziendale
 (billing gestito dall'IT). Obiettivo: replicare l'ambiente Colab su una VM,
-usando `kaggle_end_to_end.ipynb` (rileva da solo l'ambiente "locale").
+usando `colab_end_to_end.ipynb` (alla cella dati scegli l'opzione "cartella
+locale" e indica il percorso sulla VM).
 Vantaggio chiave: i dati restano nel perimetro aziendale → nessun problema
 di policy come con Colab.
 
@@ -76,7 +77,7 @@ gcloud compute ssh mmm-meridian --zone=europe-west1-b --tunnel-through-iap -- -L
 
 Poi apri **http://localhost:8080**: è JupyterLab.
 
-1. Trascina dentro `kaggle_end_to_end.ipynb` e i file dati (drag & drop).
+1. Trascina dentro `colab_end_to_end.ipynb` e i file dati (drag & drop).
 2. Terminale JupyterLab: `pip install "google-meridian>=1.6" openpyxl statsmodels`
    (TensorFlow GPU è già nell'immagine).
 3. Esegui il notebook: alla cella dati indica il percorso della cartella
