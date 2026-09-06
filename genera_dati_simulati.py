@@ -286,6 +286,76 @@ SPINTE_REGIONALI = [
 ]
 N_SPINTE_CASUALI = 6          # push canale x regione x finestra, estratti dal seed
 
+# --- scenario "pause2": blackout veri, con gruppo di controllo interno -------
+# Il campo `settimane_spente` dei CANALI spegne settimane SINGOLE e sparse. Con
+# MAX_LAG = 8 e adstock geometrico normalizzato una pausa di una settimana viene
+# riempita dal carryover: non produce variazione identificante. Qui invece:
+#   - 3 canali trattati hanno 2 blocchi di 8 settimane CONSECUTIVE (8 = MAX_LAG,
+#     cosi' il blackout supera il carryover);
+#   - 4 canali restano intatti e fanno da gruppo di controllo interno, appaiati
+#     ai trattati per dimensione (Google/Meta, Indeed/LinkedIn,
+#     Jooble/Altre+Subito), cosi' l'effetto della pausa non si confonde con la
+#     dimensione del canale;
+#   - la spesa delle settimane spente NON viene tolta: viene ridistribuita sulle
+#     settimane attive dello stesso canale in proporzione al profilo di spesa
+#     che quel canale ha nella base. La spesa totale per canale resta quella
+#     della base, quindi base-vs-pause2 non e' confuso dal livello di spesa.
+# Gli estremi sono 1-based inclusivi come si leggono nel disegno; la conversione
+# a 0-based avviene in blocchi_0based(). Tutti i blocchi stanno fuori dalle
+# prime 8 e dalle ultime 8 settimane: il notebook taglia la prima e l'ultima
+# settimana, e nelle prime MAX_LAG l'adstock e' parziale.
+PAUSE2_BLOCCHI_1BASED = {
+    # Gli indici evitano anche le pause che i canali ereditano dalla base:
+    # 61-68 su Google copriva la pausa base di Indeed (61-63) e 25-32 su Indeed
+    # toccava quella di Jooble (32-34). Con 53-60 e 24-31 le settimane a spesa
+    # zero dei tre trattati non si intersecano piu' a coppie, e non e' stato
+    # necessario rimuovere le pause ereditate, cioe' introdurre una seconda
+    # differenza rispetto alla base. (57-64 non basterebbe: contiene 61-63.)
+    "Google Ads": [(13, 20), (53, 60)],
+    "Indeed":     [(24, 31), (73, 80)],
+    "Jooble":     [(37, 44), (85, 92)],
+}
+PAUSE2_CONTROLLI = ["Meta Ads", "LinkedIn Ads", "Altre job board", "Subito Lavoro"]
+PAUSE2_LUNGHEZZA_BLOCCO = 8
+
+
+def blocchi_0based(blocchi_1based: dict) -> dict:
+    return {ch: [(a - 1, b - 1) for a, b in bl]
+            for ch, bl in blocchi_1based.items()}
+
+
+PAUSE2_SPEC = dict(
+    nome="pause2",
+    blocchi=blocchi_0based(PAUSE2_BLOCCHI_1BASED),
+    blocchi_1based=PAUSE2_BLOCCHI_1BASED,
+    controlli=PAUSE2_CONTROLLI,
+    lunghezza_blocco=PAUSE2_LUNGHEZZA_BLOCCO,
+)
+
+
+def applica_blackout_conservando_spesa(x: np.ndarray,
+                                       blocchi: list) -> tuple[np.ndarray, dict]:
+    """Spegne i blocchi indicati e ridistribuisce la spesa tolta sulle settimane
+    attive dello stesso canale, in proporzione al profilo settimanale di
+    partenza. Il totale a n settimane resta invariato per costruzione:
+    y[attive] = x[attive] * (1 + tolta/resto), e tolta + resto = x.sum().
+    """
+    n = len(x)
+    spento = np.zeros(n, dtype=bool)
+    for a, b in blocchi:
+        spento[a:b + 1] = True
+    tolta = float(x[spento].sum())
+    resto = float(x[~spento].sum())
+    if resto <= 0.0:
+        raise ValueError("blackout su tutte le settimane con spesa: "
+                         "non c'e' dove ridistribuire")
+    y = x.copy()
+    y[spento] = 0.0
+    y[~spento] = x[~spento] * (1.0 + tolta / resto)
+    return y, dict(spesa_tolta_eur=round(tolta, 2),
+                   settimane_spente_dal_blackout=int(spento.sum()),
+                   fattore_di_riscalatura=round(1.0 + tolta / resto, 6))
+
 # --- controlli di domanda ----------------------------------------------------
 CONTROLLI = {
     "richieste_clienti": dict(livello=2_400.0, trend=1.2, accoppiamento=0.55,
@@ -364,8 +434,12 @@ def curve_stagionali(woy: np.ndarray) -> tuple[np.ndarray, np.ndarray]:
 def genera(seed: int = SEED, n_settimane: int = N_SETTIMANE,
            quota_media: float = QUOTA_MEDIA_TARGET,
            rumore: str = RUMORE,
-           sigma_attr: float = RUMORE_ATTRIBUZIONE_SD) -> dict:
+           sigma_attr: float = RUMORE_ATTRIBUZIONE_SD,
+           pause_spec: dict | None = None) -> dict:
     rng = np.random.default_rng(seed)
+    # Registro di cosa il blackout ha fatto, canale per canale: finisce nel JSON
+    # dei parametri, cosi' il disegno resta documentato insieme ai dati.
+    pause_diario: dict[str, dict] = {}
 
     regioni = sorted(REGIONI)
     R = len(regioni)
@@ -424,7 +498,19 @@ def genera(seed: int = SEED, n_settimane: int = N_SETTIMANE,
         kappa = float(griglia[int(np.argmin(np.abs(
             corrs - CORR_SPESA_STAGIONALITA_TARGET)))])
         kappa_scelto[ch] = kappa
-        spesa_naz[ch] = np.round(costruisci(kappa), 2)
+        x_naz = costruisci(kappa)
+        # Il blackout si applica QUI, sulla pianificazione della spesa, prima
+        # del passo di risposta media: cosi' impression, clic, KPI, benchmark e
+        # verita' discendono tutti dal nuovo percorso di spesa. Post-processare
+        # i CSV renderebbe la verita' incoerente con la spesa.
+        # kappa e' gia' stato calibrato sul profilo BASE: il blackout non tocca
+        # la calibrazione, e i canali di controllo restano bit-identici a base.
+        if pause_spec is not None and ch in pause_spec["blocchi"]:
+            x_naz, _diario = applica_blackout_conservando_spesa(
+                x_naz, pause_spec["blocchi"][ch])
+            _diario["blocchi_1based"] = pause_spec["blocchi_1based"][ch]
+            pause_diario[ch] = _diario
+        spesa_naz[ch] = np.round(x_naz, 2)
 
     # ---- 3. riparto regionale: MAI a quote fisse ---------------------------
     # quota(g,t) = pop_g x tilt_campagna,g x AR(1)_g x spinte locali
@@ -619,6 +705,7 @@ def genera(seed: int = SEED, n_settimane: int = N_SETTIMANE,
         mu=mu, candidature=candidature,
         quota_media_realizzata=float(media_tot / (organico_tot + media_tot)),
         quote_canale=quote_ch, rumore=rumore, seed=seed,
+        pause_spec=pause_spec, pause_diario=pause_diario,
     )
 
 
@@ -929,6 +1016,58 @@ def costruisci_parametri(p: dict, quota_media: float) -> dict:
                 "python -m pipeline.allocator.run --budget <B> --min linkedin="
                 + str(int(CANALI["LinkedIn Ads"]["pavimento"] * 13))),
         },
+        **({"scenario_pause": {
+            "descrizione": (
+                "Blackout veri su una parte dei canali, per misurare se "
+                "interrompere la spesa basta a rendere misurabile un canale. "
+                "Rispetto alla base cambia UNA cosa sola: il momento in cui la "
+                "spesa avviene. Il livello di spesa per canale e' identico."),
+            "canali_trattati": sorted(p["pause_spec"]["blocchi"]),
+            "canali_di_controllo": list(p["pause_spec"]["controlli"]),
+            "lunghezza_blocco_settimane": p["pause_spec"]["lunghezza_blocco"],
+            "blocchi_per_canale_1based_inclusivi":
+                {ch: [list(b) for b in bl]
+                 for ch, bl in p["pause_spec"]["blocchi_1based"].items()},
+            "effetto_per_canale": p["pause_diario"],
+            "regola_di_ridistribuzione": (
+                "La spesa delle settimane spente e' ridistribuita sulle "
+                "settimane attive dello STESSO canale, in proporzione al "
+                "profilo settimanale che il canale ha nella base: "
+                "y[attive] = x[attive] * (1 + tolta/resto). Il totale a 104 "
+                "settimane per canale resta quello della base. I canali di "
+                "controllo non vengono toccati."),
+            "perche_questo_disegno": {
+                "blocco_piu_lungo_del_carryover": (
+                    "MAX_LAG = 8 con adstock geometrico normalizzato: una pausa "
+                    "di una o due settimane viene riempita dal carryover e non "
+                    "produce variazione identificante. Il blocco e' lungo 8 "
+                    "settimane proprio per superare la memoria dell'adstock."),
+                "gruppo_di_controllo_interno": (
+                    "Se si fermassero tutti i canali non ci sarebbe un termine "
+                    "di paragone dentro lo stesso dataset. I 4 canali di "
+                    "controllo restano identici alla base e sono appaiati ai "
+                    "trattati per dimensione (Google/Meta, Indeed/LinkedIn, "
+                    "Jooble/Altre+Subito), cosi' l'effetto della pausa non si "
+                    "confonde con la dimensione del canale."),
+                "spesa_conservata": (
+                    "Togliendo e basta la spesa delle settimane spente, il "
+                    "confronto base-vs-pause2 sarebbe confuso dal livello di "
+                    "spesa oltre che dal suo profilo temporale. Ridistribuendola "
+                    "resta una sola differenza."),
+                "blocchi_lontani_dai_bordi": (
+                    "Tutti i blocchi stanno fuori dalle prime 8 e dalle ultime 8 "
+                    "settimane: il notebook taglia la prima e l'ultima settimana, "
+                    "e nelle prime MAX_LAG settimane l'adstock e' parziale."),
+                "blocchi_non_sovrapposti": (
+                    "I blocchi dei tre trattati non condividono nessuna "
+                    "settimana: i canali restano distinguibili fra loro."),
+            },
+            "nota_sulle_pause_ereditate_dalla_base": (
+                "Oltre ai blocchi, i canali conservano le settimane_spente che "
+                "hanno gia' nella base (Indeed 3, Jooble 12): non sono state "
+                "rimosse per non introdurre una seconda differenza rispetto "
+                "alla base, dove quelle stesse settimane sono spente."),
+        }} if p.get("pause_spec") else {}),
         "regole_canali_da_aggiungere_in_CONFIG": [
             ["indeed", "Indeed"],
             ["subito|infojobs", "Subito Lavoro"],
@@ -985,7 +1124,7 @@ def scrivi_verita(p: dict, dir_out: str, parametri: dict,
 # =============================================================================
 
 def esegui(quota_media: float, suffisso: str, rumore: str,
-           radice: str | None = None) -> dict:
+           radice: str | None = None, pause_spec: dict | None = None) -> dict:
     radice = radice or os.path.join(ROOT, "dati_simulati")
     dir_modello = os.path.join(radice, f"modello{suffisso}")
     dir_bench = os.path.join(radice, "benchmark")
@@ -995,7 +1134,8 @@ def esegui(quota_media: float, suffisso: str, rumore: str,
 
     print(f"Generazione (seed={SEED}, {N_SETTIMANE} settimane, "
           f"quota media target={quota_media:.0%}, rumore={rumore})...")
-    p = genera(quota_media=quota_media, rumore=rumore)
+    p = genera(quota_media=quota_media, rumore=rumore,
+               pause_spec=pause_spec)
 
     files = scrivi_media(p, dir_modello)
     files += scrivi_kpi_e_controlli(p, dir_modello)
@@ -1029,9 +1169,16 @@ def main() -> None:
     ap.add_argument("--rumore", choices=("nb", "normale"), default=RUMORE)
     ap.add_argument("--tutte", action="store_true",
                     help="genera primaria (18,5%%) + diagnostica (30%%)")
+    ap.add_argument("--pause2", action="store_true",
+                    help="variante pause2: blackout di 8 settimane su 3 canali, "
+                         "spesa conservata, 4 canali di controllo intatti")
     args = ap.parse_args()
 
-    if args.tutte:
+    if args.pause2:
+        esegui(args.quota, "_pause2", args.rumore,
+               radice=os.path.join(ROOT, "dati_simulati", "pause2"),
+               pause_spec=PAUSE2_SPEC)
+    elif args.tutte:
         esegui(QUOTA_MEDIA_TARGET, "", args.rumore)
         print()
         esegui(0.30, "_diagnostica_q30", args.rumore)
