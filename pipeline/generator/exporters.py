@@ -46,7 +46,7 @@ def _en_date(d) -> str:
 def _camp_label(camp: str) -> str:
     """Nome campagna come appare in piattaforma."""
     ch = world.CAMPAIGNS[camp]["channel"]
-    return f"RND_IT_{ch.upper()}_{camp.upper()}"
+    return f"AZ_IT_{ch.upper()}_{camp.upper()}"
 
 
 # ------------------------------------------------------------ singoli export

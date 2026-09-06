@@ -166,12 +166,12 @@ def normalize_region(s: pd.Series) -> pd.Series:
     return s.map(conv)
 
 
-# Prefissi aziendali da togliere dai nomi di campagna (es. "RND_IT_META_").
+# Prefissi aziendali da togliere dai nomi di campagna (es. "AZ_IT_META_").
 # Si estendono senza toccare il codice:
-#     export MMM_PREFISSI_CAMPAGNA="rnd,acme"
+#     export MMM_PREFISSI_CAMPAGNA="az,acme"
 PREFISSI_CAMPAGNA = tuple(
     p.strip().lower()
-    for p in os.environ.get("MMM_PREFISSI_CAMPAGNA", "rnd").split(",")
+    for p in os.environ.get("MMM_PREFISSI_CAMPAGNA", "az").split(",")
     if p.strip()
 )
 

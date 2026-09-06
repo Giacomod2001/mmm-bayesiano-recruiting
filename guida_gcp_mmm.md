@@ -78,7 +78,7 @@ gcloud compute ssh mmm-meridian --zone=europe-west1-b --tunnel-through-iap -- -L
 Poi apri **http://localhost:8080**: è JupyterLab.
 
 1. Trascina dentro `colab_end_to_end.ipynb` e i file dati (drag & drop).
-2. Terminale JupyterLab: `pip install "google-meridian>=1.6" openpyxl statsmodels`
+2. Terminale JupyterLab: `pip install "google-meridian==1.8.0" openpyxl statsmodels`
    (TensorFlow GPU è già nell'immagine).
 3. Esegui il notebook: alla cella dati indica il percorso della cartella
    (es. `/home/tuo_utente/dati`).

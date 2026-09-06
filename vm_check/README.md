@@ -188,7 +188,7 @@ sintetici: da lì in avanti l'unica variabile sono i dati reali. Passo
 successivo: installare i pacchetti del fit e aprire il notebook.
 
 ```bash
-pip install "google-meridian>=1.6" openpyxl statsmodels
+pip install "google-meridian==1.8.0" openpyxl statsmodels
 ```
 
 Vedi `guida_gcp_mmm.md` (creazione VM, costi, budget alert) e `setup_vm.sh`

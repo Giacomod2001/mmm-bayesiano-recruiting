@@ -27,7 +27,9 @@ source "$VENV_DIR/bin/activate"
 pip install --upgrade pip
 
 # --- 3. Dipendenze del notebook (google-meridian trascina TensorFlow) -------
-pip install "google-meridian>=1.6" openpyxl statsmodels jupyterlab
+# Versione FISSATA: con >=1.6 pip prende l'ultima release e il fit si rompe.
+# Il notebook si ferma da solo se trova una versione diversa dalla 1.8.0.
+pip install "google-meridian==1.8.0" openpyxl statsmodels jupyterlab
 
 # --- 4. Verifica GPU (facoltativa: su CPU funziona, solo piu' lento) --------
 python3 - <<'EOF'

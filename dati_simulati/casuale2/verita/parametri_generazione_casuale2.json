@@ -505,7 +505,7 @@
     }
   },
   "campagne": {
-    "RND_IT_GOOGLE_SEARCH_BRAND": {
+    "AZ_IT_GOOGLE_SEARCH_BRAND": {
       "canale": "Google Ads",
       "qualita_relativa_vera": 1.15,
       "quota_spesa_di_canale": 0.138,
@@ -515,7 +515,7 @@
       "settimane_attive": 104,
       "finestra": "(0, 103)"
     },
-    "RND_IT_GOOGLE_SEARCH_GENERICA": {
+    "AZ_IT_GOOGLE_SEARCH_GENERICA": {
       "canale": "Google Ads",
       "qualita_relativa_vera": 1.3,
       "quota_spesa_di_canale": 0.3505,
@@ -525,7 +525,7 @@
       "settimane_attive": 104,
       "finestra": "(0, 103)"
     },
-    "RND_IT_GOOGLE_SEARCH_LOCALE": {
+    "AZ_IT_GOOGLE_SEARCH_LOCALE": {
       "canale": "Google Ads",
       "qualita_relativa_vera": 1.2,
       "quota_spesa_di_canale": 0.1759,
@@ -535,7 +535,7 @@
       "settimane_attive": 104,
       "finestra": "(0, 103)"
     },
-    "RND_IT_GOOGLE_PMAX": {
+    "AZ_IT_GOOGLE_PMAX": {
       "canale": "Google Ads",
       "qualita_relativa_vera": 0.85,
       "quota_spesa_di_canale": 0.17,
@@ -545,7 +545,7 @@
       "settimane_attive": 78,
       "finestra": "(26, 103)"
     },
-    "RND_IT_GOOGLE_DISPLAY": {
+    "AZ_IT_GOOGLE_DISPLAY": {
       "canale": "Google Ads",
       "qualita_relativa_vera": 0.55,
       "quota_spesa_di_canale": 0.1428,
@@ -555,7 +555,7 @@
       "settimane_attive": 104,
       "finestra": "(0, 103)"
     },
-    "RND_IT_GOOGLE_VIDEO_YOUTUBE": {
+    "AZ_IT_GOOGLE_VIDEO_YOUTUBE": {
       "canale": "Google Ads",
       "qualita_relativa_vera": 0.6,
       "quota_spesa_di_canale": 0.0229,
@@ -565,7 +565,7 @@
       "settimane_attive": 26,
       "finestra": "flight [(10, 17), (48, 55), (86, 95)]"
     },
-    "RND_IT_META_LEAD_GEN_FORMS": {
+    "AZ_IT_META_LEAD_GEN_FORMS": {
       "canale": "Meta Ads",
       "qualita_relativa_vera": 1.25,
       "quota_spesa_di_canale": 0.3241,
@@ -575,7 +575,7 @@
       "settimane_attive": 104,
       "finestra": "(0, 103)"
     },
-    "RND_IT_META_PROSPECTING_DABA": {
+    "AZ_IT_META_PROSPECTING_DABA": {
       "canale": "Meta Ads",
       "qualita_relativa_vera": 1.1,
       "quota_spesa_di_canale": 0.2951,
@@ -585,7 +585,7 @@
       "settimane_attive": 104,
       "finestra": "(0, 103)"
     },
-    "RND_IT_META_RETARGETING_SITO": {
+    "AZ_IT_META_RETARGETING_SITO": {
       "canale": "Meta Ads",
       "qualita_relativa_vera": 1.35,
       "quota_spesa_di_canale": 0.147,
@@ -595,7 +595,7 @@
       "settimane_attive": 104,
       "finestra": "(0, 103)"
     },
-    "RND_IT_META_VIDEO_REELS": {
+    "AZ_IT_META_VIDEO_REELS": {
       "canale": "Meta Ads",
       "qualita_relativa_vera": 0.7,
       "quota_spesa_di_canale": 0.1403,
@@ -605,7 +605,7 @@
       "settimane_attive": 104,
       "finestra": "(0, 103)"
     },
-    "RND_IT_META_ADVANTAGE_PLUS": {
+    "AZ_IT_META_ADVANTAGE_PLUS": {
       "canale": "Meta Ads",
       "qualita_relativa_vera": 0.95,
       "quota_spesa_di_canale": 0.0935,
@@ -615,7 +615,7 @@
       "settimane_attive": 78,
       "finestra": "(0, 77)"
     },
-    "RND_IT_LINKEDIN_SPONSORED_CONTENT": {
+    "AZ_IT_LINKEDIN_SPONSORED_CONTENT": {
       "canale": "LinkedIn Ads",
       "qualita_relativa_vera": 0.95,
       "quota_spesa_di_canale": 0.4313,
@@ -625,7 +625,7 @@
       "settimane_attive": 104,
       "finestra": "(0, 103)"
     },
-    "RND_IT_LINKEDIN_LEAD_GEN_FORMS": {
+    "AZ_IT_LINKEDIN_LEAD_GEN_FORMS": {
       "canale": "LinkedIn Ads",
       "qualita_relativa_vera": 1.3,
       "quota_spesa_di_canale": 0.2911,
@@ -635,7 +635,7 @@
       "settimane_attive": 104,
       "finestra": "(0, 103)"
     },
-    "RND_IT_LINKEDIN_VIDEO_EMPLOYER": {
+    "AZ_IT_LINKEDIN_VIDEO_EMPLOYER": {
       "canale": "LinkedIn Ads",
       "qualita_relativa_vera": 0.7,
       "quota_spesa_di_canale": 0.1572,
@@ -645,7 +645,7 @@
       "settimane_attive": 104,
       "finestra": "(0, 103)"
     },
-    "RND_IT_LINKEDIN_TEXT_ADS": {
+    "AZ_IT_LINKEDIN_TEXT_ADS": {
       "canale": "LinkedIn Ads",
       "qualita_relativa_vera": 0.6,
       "quota_spesa_di_canale": 0.1203,
@@ -655,7 +655,7 @@
       "settimane_attive": 104,
       "finestra": "(0, 103)"
     },
-    "RND_IT_INDEED_SPONSORED_JOBS": {
+    "AZ_IT_INDEED_SPONSORED_JOBS": {
       "canale": "Indeed",
       "qualita_relativa_vera": 1.2,
       "quota_spesa_di_canale": 0.6097,
@@ -665,7 +665,7 @@
       "settimane_attive": 104,
       "finestra": "(0, 103)"
     },
-    "RND_IT_INDEED_PPA_STAGIONALI": {
+    "AZ_IT_INDEED_PPA_STAGIONALI": {
       "canale": "Indeed",
       "qualita_relativa_vera": 1.05,
       "quota_spesa_di_canale": 0.0824,
@@ -675,7 +675,7 @@
       "settimane_attive": 46,
       "finestra": "flight [(22, 34), (40, 50), (74, 86), (92, 100)]"
     },
-    "RND_IT_INDEED_DISPLAY_RETE": {
+    "AZ_IT_INDEED_DISPLAY_RETE": {
       "canale": "Indeed",
       "qualita_relativa_vera": 0.55,
       "quota_spesa_di_canale": 0.1697,
@@ -685,7 +685,7 @@
       "settimane_attive": 104,
       "finestra": "(0, 103)"
     },
-    "RND_IT_INDEED_RETARGETING_CANDIDATI": {
+    "AZ_IT_INDEED_RETARGETING_CANDIDATI": {
       "canale": "Indeed",
       "qualita_relativa_vera": 1.1,
       "quota_spesa_di_canale": 0.1382,
@@ -695,7 +695,7 @@
       "settimane_attive": 104,
       "finestra": "(0, 103)"
     },
-    "RND_IT_SUBITO_SLOT_PREMIUM": {
+    "AZ_IT_SUBITO_SLOT_PREMIUM": {
       "canale": "Subito Lavoro",
       "qualita_relativa_vera": 1.0,
       "quota_spesa_di_canale": 0.5318,
@@ -705,7 +705,7 @@
       "settimane_attive": 104,
       "finestra": "(0, 103)"
     },
-    "RND_IT_SUBITO_SPONSORED_ANNUNCI": {
+    "AZ_IT_SUBITO_SPONSORED_ANNUNCI": {
       "canale": "Subito Lavoro",
       "qualita_relativa_vera": 1.15,
       "quota_spesa_di_canale": 0.282,
@@ -715,7 +715,7 @@
       "settimane_attive": 104,
       "finestra": "(0, 103)"
     },
-    "RND_IT_SUBITO_DISPLAY_HOME": {
+    "AZ_IT_SUBITO_DISPLAY_HOME": {
       "canale": "Subito Lavoro",
       "qualita_relativa_vera": 0.5,
       "quota_spesa_di_canale": 0.0479,
@@ -725,7 +725,7 @@
       "settimane_attive": 24,
       "finestra": "flight [(40, 51), (92, 103)]"
     },
-    "RND_IT_SUBITO_RETARGETING": {
+    "AZ_IT_SUBITO_RETARGETING": {
       "canale": "Subito Lavoro",
       "qualita_relativa_vera": 1.05,
       "quota_spesa_di_canale": 0.1383,
@@ -735,7 +735,7 @@
       "settimane_attive": 104,
       "finestra": "(0, 103)"
     },
-    "RND_IT_JOOBLE_CPC_ANNUNCI": {
+    "AZ_IT_JOOBLE_CPC_ANNUNCI": {
       "canale": "Jooble",
       "qualita_relativa_vera": 1.05,
       "quota_spesa_di_canale": 0.5213,
@@ -745,7 +745,7 @@
       "settimane_attive": 104,
       "finestra": "(0, 103)"
     },
-    "RND_IT_JOOBLE_SPONSORED_FEED": {
+    "AZ_IT_JOOBLE_SPONSORED_FEED": {
       "canale": "Jooble",
       "qualita_relativa_vera": 1.15,
       "quota_spesa_di_canale": 0.2691,
@@ -755,7 +755,7 @@
       "settimane_attive": 104,
       "finestra": "(0, 103)"
     },
-    "RND_IT_JOOBLE_PROSPECTING_REGIONI": {
+    "AZ_IT_JOOBLE_PROSPECTING_REGIONI": {
       "canale": "Jooble",
       "qualita_relativa_vera": 0.85,
       "quota_spesa_di_canale": 0.0822,
@@ -765,7 +765,7 @@
       "settimane_attive": 51,
       "finestra": "(53, 103)"
     },
-    "RND_IT_JOOBLE_RETARGETING": {
+    "AZ_IT_JOOBLE_RETARGETING": {
       "canale": "Jooble",
       "qualita_relativa_vera": 0.95,
       "quota_spesa_di_canale": 0.1274,
@@ -775,7 +775,7 @@
       "settimane_attive": 104,
       "finestra": "(0, 103)"
     },
-    "RND_IT_BAKECA_LAVORO_ANNUNCI": {
+    "AZ_IT_BAKECA_LAVORO_ANNUNCI": {
       "canale": "Altre job board",
       "qualita_relativa_vera": 0.9,
       "quota_spesa_di_canale": 0.3883,
@@ -785,7 +785,7 @@
       "settimane_attive": 104,
       "finestra": "(0, 103)"
     },
-    "RND_IT_TROVOLAVORO_SPONSORED": {
+    "AZ_IT_TROVOLAVORO_SPONSORED": {
       "canale": "Altre job board",
       "qualita_relativa_vera": 1.05,
       "quota_spesa_di_canale": 0.2989,
@@ -795,7 +795,7 @@
       "settimane_attive": 104,
       "finestra": "(0, 103)"
     },
-    "RND_IT_CAREERJET_CPC": {
+    "AZ_IT_CAREERJET_CPC": {
       "canale": "Altre job board",
       "qualita_relativa_vera": 1.0,
       "quota_spesa_di_canale": 0.2249,
@@ -805,7 +805,7 @@
       "settimane_attive": 104,
       "finestra": "(0, 103)"
     },
-    "RND_IT_TALENT_COM_FEED": {
+    "AZ_IT_TALENT_COM_FEED": {
       "canale": "Altre job board",
       "qualita_relativa_vera": 0.95,
       "quota_spesa_di_canale": 0.0879,

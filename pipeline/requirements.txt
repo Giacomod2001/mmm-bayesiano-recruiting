@@ -1,5 +1,10 @@
 # Pipeline MMM + Budget Allocator (Python >= 3.10)
-google-meridian>=1.6        # MMM bayesiano geo-gerarchico (TF incluso)
+google-meridian==1.8.0      # MMM bayesiano geo-gerarchico (TF incluso).
+                            # FISSATA: con >=1.6 pip prendeva l'ultima release e
+                            # dalla 1.8.0 in poi il fit si rompe (roi_m float32 su
+                            # backend float64, poi tf.int32 nel backend numpy di TFP).
+                            # I run della tesi sono tutti sulla 1.8.0: cambiarla
+                            # cambia i numeri. Versioni esatte in requirements_freeze.txt.
 pandas>=2.0
 numpy>=1.24
 scipy>=1.10

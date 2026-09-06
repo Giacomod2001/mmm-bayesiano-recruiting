@@ -16,12 +16,26 @@ distribuito insieme a Robyn: nessun dato aziendale è coinvolto.
 
 | | Robyn | Meridian |
 |---|---|---|
-| Versione | 3.12.x (CRAN) | google-meridian |
+| Versione | 3.12.x (CRAN) | google-meridian, versione non registrata (vedi sotto) |
 | Ambiente | Colab CPU | Colab GPU T4 |
 | Durata | ~1–1,5 h | ~20 min |
 | Campionamento | 2000 iterazioni × 5 trial | 4 catene × 1000 draw |
 | Validazione | ts_validation, train_size ~80% | holdout ultime 21 settimane |
 | Modello riportato | `3_1638_1`, miglior NRMSE test tra i vincitori dei cluster | posterior unico |
+
+**Limite di riproducibilità: la versione di Meridian di questo run non è nota.**
+Il notebook installava `google-meridian` senza vincolo di versione e non ha
+salvato l'output della cella di installazione, quindi il numero esatto non è
+ricostruibile: si sa solo che è la versione pubblicata su PyPI al 02/07/2026.
+Chi rilancia oggi `colab_meridian_demo.ipynb` installa una versione diversa e
+**può ottenere valori che non corrispondono a quelli riportati qui**, senza che
+niente glielo segnali. I numeri Meridian di questa pagina vanno letti come
+l'esito di quel run, non come un risultato riproducibile a comando.
+
+Il vincolo è stato lasciato aperto di proposito. Fissarlo alla 1.8.0, la
+versione usata dai run del Capitolo 5, non renderebbe questo confronto più
+fedele: è una versione successiva a quella con cui il confronto è stato fatto,
+e darebbe una falsa impressione di riproducibilità.
 
 ## Tabella di sintesi
 
