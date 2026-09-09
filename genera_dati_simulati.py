@@ -13,6 +13,8 @@ l'ingestion generica del notebook legge senza adattamenti.
     python genera_dati_simulati.py                  # variante primaria
     python genera_dati_simulati.py --tutte          # primaria + diagnostica 30%
     python genera_dati_simulati.py --quota 0.30 --suffisso _q30
+    python genera_dati_simulati.py --pause2         # variante blackout
+    python genera_dati_simulati.py --sanita         # variante spesa casuale
 
 Cartelle prodotte (vedi dati_simulati/README.md):
     dati_simulati/modello/      input del modello   -> cella 4 del notebook
@@ -356,6 +358,118 @@ def applica_blackout_conservando_spesa(x: np.ndarray,
                    settimane_spente_dal_blackout=int(spento.sum()),
                    fattore_di_riscalatura=round(1.0 + tolta / resto, 6))
 
+# --- scenario "sanita": spesa completamente randomizzata ---------------------
+# E' un controllo di sanita' sul METODO, non uno scenario realizzabile in
+# azienda. Tutti gli altri dataset misurano quanto il modello sbaglia in
+# condizioni difficili; questo misura il contrario, cioe' il caso in cui il
+# modello DEVE riuscire. La spesa non e' piu' pianificata: e' estratta a sorte,
+# indipendente dalla stagionalita', dai controlli di domanda, dalla spesa degli
+# altri canali e dalla propria spesa delle settimane precedenti. Se qui il
+# contributo vero non viene recuperato, il problema non e' l'identificazione ma
+# l'implementazione, e le conclusioni degli altri run vanno riviste.
+#
+# Come per pause2, l'intervento agisce sulla PIANIFICAZIONE della spesa dentro
+# genera(), PRIMA del passo di risposta media (adstock + Hill): impression,
+# clic, KPI, benchmark e verita' discendono tutti dal nuovo percorso di spesa.
+# I CSV non vengono mai post-processati.
+#
+# DISTRIBUZIONE. Lognormale centrata sulla media settimanale REALIZZATA del
+# canale nella base (mu = log(media) - sigma^2/2, cosi' E[x] = media), sd del
+# logaritmo 0,60. E' la distribuzione positiva piu' semplice con un solo
+# parametro di ampiezza e non ha bisogno di troncature. Sigma e' scelta perche'
+# il rapporto atteso fra decile alto e decile basso vale
+# exp(2 x 1,2816 x sigma) = 4,65, sopra il fattore 4 chiesto dal disegno
+# (realizzato a seed 42: fra 4,4 e 5,6 sui sette canali). E' l'ampiezza a
+# rendere facile il problema: la spesa spazza tutta la curva di risposta invece
+# di oscillare attorno al proprio livello.
+#
+# CONSERVAZIONE. Dopo l'estrazione la serie di ogni canale viene moltiplicata
+# per totale_base / somma_estratta: il totale sulle 104 settimane torna quello
+# della base (entro l'arrotondamento ai centesimi, molto sotto lo 0,1%
+# richiesto). Il fattore e' costante, quindi non tocca ne' le correlazioni, ne'
+# l'autocorrelazione, ne' il rapporto fra i decili: la serie resta iid. Serve
+# perche' il confronto base-vs-sanita non sia confuso dal livello di spesa,
+# come gia' fatto per pause2.
+#
+# RIPARTO REGIONALE. Randomizzato anche quello, perche' il disegno chiede
+# indipendenza su ogni coppia regione-settimana: quota(g,t) proporzionale alla
+# popolazione per uno shock lognormale iid (sd del log 0,25, la stessa
+# dispersione regionale complessiva della base, che li' e' pero' persistente -
+# tilt fisso di campagna piu' AR(1) - e in parte stagionale, per via delle
+# spinte regionali agganciate alla settimana dell'anno). Restare proporzionali
+# alla popolazione IN MEDIA e' deliberato: un riparto uniforme fra regioni
+# darebbe alla Valle d'Aosta la stessa spesa della Lombardia, saturerebbe la
+# Hill nelle regioni piccole e renderebbe il problema piu' difficile, non piu'
+# facile.
+#
+# COSA SPARISCE. Due regole di pianificazione della base non sopravvivono,
+# perche' sono pattern di pianificazione e il disegno chiede che non ce ne
+# siano: le settimane spente (`settimane_spente`) e il pavimento di spesa di
+# LinkedIn (`pavimento`). Il livello di spesa non ne risente, perche' la
+# conservazione e' fatta sul totale della base, che quelle regole le contiene.
+#
+# COSA RESTA. Tutto il resto e' identico alla base: stesso seed, stessi
+# parametri veri (adstock, Hill, beta ricalibrato sullo stesso target del
+# 18,5%), stessi controlli di domanda, stessa stagionalita' sottostante della
+# DOMANDA, stesse campagne con le stesse finestre di attivita' e lo stesso
+# rumore sulla quota di campagna. Le finestre di campagna restano perche'
+# spostano solo lo SPLIT dentro il canale, non la spesa del canale, che e' il
+# livello su cui il disegno chiede l'indipendenza.
+SANITA_SIGMA_LOG_NAZIONALE = 0.60
+SANITA_SIGMA_LOG_REGIONALE = 0.25
+SANITA_SEED_OFFSET = 23        # rng dedicato: il resto del mondo non si sposta
+
+SANITA_SPEC = dict(
+    nome="sanita",
+    sigma_log_nazionale=SANITA_SIGMA_LOG_NAZIONALE,
+    sigma_log_regionale=SANITA_SIGMA_LOG_REGIONALE,
+    seed_offset=SANITA_SEED_OFFSET,
+)
+
+
+def spesa_casuale_conservando_totale(rng_s: np.random.Generator,
+                                     x_base: np.ndarray,
+                                     sigma_log: float) -> tuple[np.ndarray, dict]:
+    """Sostituisce il percorso di spesa nazionale di un canale con estrazioni
+    lognormali indipendenti, poi riscala per conservare il totale della base.
+
+        x[t] = media_base * LogN(-sigma^2/2, sigma),  iid su t
+        y    = x * totale_base / somma(x)
+
+    Del percorso base resta solo il TOTALE: livello e forma temporale restano
+    separati, e il confronto base-vs-sanita non e' confuso dal livello di spesa.
+    """
+    n = len(x_base)
+    totale = float(x_base.sum())
+    if totale <= 0.0:
+        raise ValueError("canale senza spesa nella base: non c'e' un totale "
+                         "da conservare")
+    media = totale / n
+    y = media * rng_s.lognormal(-0.5 * sigma_log ** 2, sigma_log, n)
+    fattore = totale / float(y.sum())
+    y = y * fattore
+    d1, d9 = np.percentile(y, [10, 90])
+    return y, dict(
+        totale_base_eur=round(totale, 2),
+        media_settimanale_base_eur=round(media, 2),
+        sigma_log=sigma_log,
+        fattore_di_riscalatura=round(float(fattore), 6),
+        rapporto_decile_alto_su_basso=round(float(d9 / d1), 2),
+        cv_realizzato=round(float(y.std() / y.mean()), 3),
+        settimane_spente_della_base_rimosse=int((x_base == 0).sum()),
+    )
+
+
+def quote_regionali_casuali(rng_s: np.random.Generator, n: int, R: int,
+                            pop: np.ndarray, sigma_log: float) -> np.ndarray:
+    """Riparto regionale iid su ogni coppia regione-settimana: proporzionale
+    alla popolazione a meno di uno shock lognormale indipendente. Nessuna
+    persistenza temporale, nessun tilt fisso di campagna, nessuna spinta
+    regionale agganciata alla settimana dell'anno."""
+    m = pop[None, :] * rng_s.lognormal(-0.5 * sigma_log ** 2, sigma_log, (n, R))
+    return m / m.sum(axis=1, keepdims=True)
+
+
 # --- controlli di domanda ----------------------------------------------------
 CONTROLLI = {
     "richieste_clienti": dict(livello=2_400.0, trend=1.2, accoppiamento=0.55,
@@ -435,11 +549,20 @@ def genera(seed: int = SEED, n_settimane: int = N_SETTIMANE,
            quota_media: float = QUOTA_MEDIA_TARGET,
            rumore: str = RUMORE,
            sigma_attr: float = RUMORE_ATTRIBUZIONE_SD,
-           pause_spec: dict | None = None) -> dict:
+           pause_spec: dict | None = None,
+           sanita_spec: dict | None = None) -> dict:
     rng = np.random.default_rng(seed)
     # Registro di cosa il blackout ha fatto, canale per canale: finisce nel JSON
     # dei parametri, cosi' il disegno resta documentato insieme ai dati.
     pause_diario: dict[str, dict] = {}
+    # La randomizzazione della spesa usa un rng DEDICATO (seed+offset), come il
+    # rumore di attribuzione: cosi' tutte le altre estrazioni - riparto regionale
+    # della base, rumore su impression e clic, beta per regione, moltiplicatori
+    # di baseline, controlli, rumore osservativo - restano bit-identiche alla
+    # base, e i PARAMETRI VERI del mondo sono gli stessi del dataset base.
+    sanita_diario: dict[str, dict] = {}
+    rng_sanita = (np.random.default_rng(seed + sanita_spec["seed_offset"])
+                  if sanita_spec is not None else None)
 
     regioni = sorted(REGIONI)
     R = len(regioni)
@@ -510,6 +633,14 @@ def genera(seed: int = SEED, n_settimane: int = N_SETTIMANE,
                 x_naz, pause_spec["blocchi"][ch])
             _diario["blocchi_1based"] = pause_spec["blocchi_1based"][ch]
             pause_diario[ch] = _diario
+        # La randomizzazione agisce nello stesso punto del blackout, sulla
+        # pianificazione: del percorso base resta solo il TOTALE da conservare.
+        # Con esso spariscono le settimane spente e il pavimento di spesa, che
+        # sono pattern di pianificazione: qui non ce ne devono essere.
+        if sanita_spec is not None:
+            x_naz, _diario = spesa_casuale_conservando_totale(
+                rng_sanita, x_naz, sanita_spec["sigma_log_nazionale"])
+            sanita_diario[ch] = _diario
         spesa_naz[ch] = np.round(x_naz, 2)
 
     # ---- 3. riparto regionale: MAI a quote fisse ---------------------------
@@ -573,6 +704,14 @@ def genera(seed: int = SEED, n_settimane: int = N_SETTIMANE,
         for i, cp in enumerate(camps):
             sp_naz = spesa_naz[ch] * quote[i]
             shares = quote_regionali(cp, ch)
+            if sanita_spec is not None:
+                # quote_regionali() viene chiamata comunque e il suo risultato
+                # scartato: consuma il flusso di rng condiviso esattamente come
+                # nella base, cosi' tutte le estrazioni successive non si
+                # spostano di un passo e i parametri veri restano quelli.
+                shares = quote_regionali_casuali(
+                    rng_sanita, n, R, pop,
+                    sanita_spec["sigma_log_regionale"])
             sp = sp_naz[:, None] * shares
             impr = (sp / CAMPAGNE[cp]["cpm"] * 1000.0
                     * rng.normal(1.0, 0.03, (n, R)).clip(0.85, 1.15))
@@ -706,6 +845,7 @@ def genera(seed: int = SEED, n_settimane: int = N_SETTIMANE,
         quota_media_realizzata=float(media_tot / (organico_tot + media_tot)),
         quote_canale=quote_ch, rumore=rumore, seed=seed,
         pause_spec=pause_spec, pause_diario=pause_diario,
+        sanita_spec=sanita_spec, sanita_diario=sanita_diario,
     )
 
 
@@ -1068,6 +1208,112 @@ def costruisci_parametri(p: dict, quota_media: float) -> dict:
                 "rimosse per non introdurre una seconda differenza rispetto "
                 "alla base, dove quelle stesse settimane sono spente."),
         }} if p.get("pause_spec") else {}),
+        **({"scenario_sanita": {
+            "descrizione": (
+                "Spesa completamente randomizzata. Per ogni canale la spesa "
+                "settimanale nazionale e il riparto regionale sono estratti in "
+                "modo indipendente: nessun legame con la stagionalita', con i "
+                "controlli di domanda, con la spesa degli altri canali, ne' con "
+                "la propria spesa delle settimane precedenti. Rispetto alla base "
+                "cambia UNA cosa sola: come viene decisa la spesa. Il livello di "
+                "spesa per canale e' identico."),
+            "a_cosa_serve": (
+                "E' il caso limite in cui l'identificazione e' massimamente "
+                "facilitata, e serve come CONTROLLO DI SANITA' sul metodo, non "
+                "come scenario realizzabile in azienda: nessun reparto media "
+                "pianifica a sorte, e nemmeno potrebbe. Tutti gli altri dataset "
+                "misurano quanto il modello sbaglia in condizioni difficili; "
+                "questo misura il caso opposto, quello in cui il modello DEVE "
+                "riuscire. Se qui il contributo vero non viene recuperato, il "
+                "problema non e' l'identificazione ma l'implementazione, e le "
+                "conclusioni degli altri run vanno riviste. E' il test che rende "
+                "credibile il resto del lavoro."),
+            "distribuzione": {
+                "famiglia": "lognormale, estrazioni iid sulle 104 settimane",
+                "centratura": (
+                    "mu = log(media) - sigma^2/2, con media = media settimanale "
+                    "REALIZZATA del canale nella base (totale base / 104): cosi' "
+                    "il valore atteso coincide con la media della base"),
+                "sigma_log_nazionale": SANITA_SIGMA_LOG_NAZIONALE,
+                "sigma_log_regionale": SANITA_SIGMA_LOG_REGIONALE,
+                "perche_questa": (
+                    "e' la distribuzione positiva piu' semplice con un solo "
+                    "parametro di ampiezza e non richiede troncature. La sigma "
+                    "nazionale 0,60 e' scelta sul requisito del disegno: il "
+                    "rapporto atteso fra decile alto e decile basso vale "
+                    "exp(2 x 1,2816 x sigma) = 4,65, sopra il fattore 4 "
+                    "richiesto. E' l'ampiezza a rendere facile il problema: la "
+                    "spesa spazza tutta la curva di risposta invece di oscillare "
+                    "attorno al proprio livello."),
+            },
+            "regola_di_riscalatura": (
+                "Dopo l'estrazione la serie di ogni canale viene moltiplicata "
+                "per totale_base / somma_estratta, cosi' il totale sulle 104 "
+                "settimane coincide con quello della base. Il fattore e' "
+                "costante: non tocca ne' le correlazioni, ne' l'autocorrelazione, "
+                "ne' il rapporto fra i decili, quindi la serie resta iid. Serve "
+                "perche' il confronto base-vs-sanita non sia confuso dal livello "
+                "di spesa, come gia' fatto per pause2."),
+            "riparto_regionale": (
+                "Randomizzato anche quello, perche' il disegno chiede "
+                "indipendenza su ogni coppia regione-settimana: la quota di ogni "
+                "regione e' proporzionale alla popolazione a meno di uno shock "
+                "lognormale iid (sd del log 0,25, la stessa dispersione "
+                "regionale complessiva della base, che li' e' pero' persistente "
+                "- tilt fisso di campagna piu' AR(1) - e in parte stagionale, "
+                "per via delle spinte regionali agganciate alla settimana "
+                "dell'anno). Restare proporzionali alla popolazione IN MEDIA e' "
+                "deliberato: un riparto uniforme fra regioni darebbe alla Valle "
+                "d'Aosta la stessa spesa della Lombardia, saturerebbe la Hill "
+                "nelle regioni piccole e renderebbe il problema piu' difficile, "
+                "non piu' facile."),
+            "dove_agisce": (
+                "sulla pianificazione della spesa dentro genera(), PRIMA del "
+                "passo di risposta media (adstock + Hill), come per pause2: "
+                "impression, clic, KPI, benchmark e verita' discendono tutti dal "
+                "nuovo percorso di spesa. I CSV non sono mai post-processati."),
+            "cosa_sparisce_rispetto_alla_base": {
+                "settimane_spente": (
+                    "il campo settimane_spente dei canali non viene applicato: "
+                    "una settimana spenta a indice fisso e' un pattern di "
+                    "pianificazione, e il disegno chiede che non ce ne siano. "
+                    "Nella base erano 27 in tutto (Meta 2, Indeed 3, Subito "
+                    "Lavoro 4, Jooble 12, Altre job board 6); qui nessun canale "
+                    "ha settimane a spesa zero."),
+                "pavimento_di_spesa": (
+                    "il pavimento settimanale di LinkedIn non viene applicato: "
+                    "troncherebbe la lognormale dal basso e reintrodurrebbe una "
+                    "regola di pianificazione. La chiave scenario_allocatore "
+                    "qui sopra descrive la base, non questa variante."),
+                "nota_sul_livello": (
+                    "toglierle non sposta il livello di spesa: la conservazione "
+                    "e' fatta sul TOTALE della base, che quelle regole le "
+                    "contiene gia'."),
+            },
+            "cosa_resta_identico_alla_base": (
+                "seed 42, 20 regioni, 104 settimane, 7 canali, parametri veri "
+                "(adstock lambda, Hill ec e slope, beta ricalibrato sullo stesso "
+                "target del 18,5%), controlli di domanda, stagionalita' "
+                "sottostante della DOMANDA, campagne con le stesse finestre di "
+                "attivita' e lo stesso rumore sulla quota di campagna, rumore di "
+                "attribuzione intra-canale, rumore osservativo. Le finestre di "
+                "campagna restano perche' spostano solo lo SPLIT dentro il "
+                "canale, non la spesa del canale, che e' il livello su cui il "
+                "disegno chiede l'indipendenza. La randomizzazione usa un rng "
+                "dedicato (seed+" + str(SANITA_SEED_OFFSET) + "), quindi i beta "
+                "per regione e i moltiplicatori di baseline sono gli STESSI "
+                "numeri della base."),
+            "campi_inerti_in_questa_variante": [
+                "canali[*].kappa_accoppiamento_stagionale: e' il valore calibrato "
+                "sul percorso di spesa della base, che qui viene scartato. In "
+                "sanita l'accoppiamento stagionale della spesa e' zero per "
+                "costruzione.",
+                "canali[*].pavimento_settimanale_eur: riportato per confronto con "
+                "la base, ma non applicato.",
+                "scenario_allocatore: descrive il vincolo della base.",
+            ],
+            "effetto_per_canale": p["sanita_diario"],
+        }} if p.get("sanita_spec") else {}),
         "regole_canali_da_aggiungere_in_CONFIG": [
             ["indeed", "Indeed"],
             ["subito|infojobs", "Subito Lavoro"],
@@ -1124,7 +1370,8 @@ def scrivi_verita(p: dict, dir_out: str, parametri: dict,
 # =============================================================================
 
 def esegui(quota_media: float, suffisso: str, rumore: str,
-           radice: str | None = None, pause_spec: dict | None = None) -> dict:
+           radice: str | None = None, pause_spec: dict | None = None,
+           sanita_spec: dict | None = None) -> dict:
     radice = radice or os.path.join(ROOT, "dati_simulati")
     dir_modello = os.path.join(radice, f"modello{suffisso}")
     dir_bench = os.path.join(radice, "benchmark")
@@ -1135,7 +1382,7 @@ def esegui(quota_media: float, suffisso: str, rumore: str,
     print(f"Generazione (seed={SEED}, {N_SETTIMANE} settimane, "
           f"quota media target={quota_media:.0%}, rumore={rumore})...")
     p = genera(quota_media=quota_media, rumore=rumore,
-               pause_spec=pause_spec)
+               pause_spec=pause_spec, sanita_spec=sanita_spec)
 
     files = scrivi_media(p, dir_modello)
     files += scrivi_kpi_e_controlli(p, dir_modello)
@@ -1172,12 +1419,25 @@ def main() -> None:
     ap.add_argument("--pause2", action="store_true",
                     help="variante pause2: blackout di 8 settimane su 3 canali, "
                          "spesa conservata, 4 canali di controllo intatti")
+    ap.add_argument("--sanita", action="store_true",
+                    help="variante sanita: spesa estratta a sorte (lognormale "
+                         "iid, nessun legame con stagionalita', controlli di "
+                         "domanda, altri canali o propria storia), totale per "
+                         "canale conservato. Controllo di sanita' sul metodo, "
+                         "non uno scenario aziendale")
     args = ap.parse_args()
+
+    if args.pause2 and args.sanita:
+        ap.error("--pause2 e --sanita si escludono: sono due varianti diverse")
 
     if args.pause2:
         esegui(args.quota, "_pause2", args.rumore,
                radice=os.path.join(ROOT, "dati_simulati", "pause2"),
                pause_spec=PAUSE2_SPEC)
+    elif args.sanita:
+        esegui(args.quota, "_sanita", args.rumore,
+               radice=os.path.join(ROOT, "dati_simulati", "sanita"),
+               sanita_spec=SANITA_SPEC)
     elif args.tutte:
         esegui(QUOTA_MEDIA_TARGET, "", args.rumore)
         print()
