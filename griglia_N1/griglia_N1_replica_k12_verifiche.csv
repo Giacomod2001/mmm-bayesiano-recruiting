@@ -1,0 +1,2 @@
+quando,n,codice,nome,seed_mondo,regola,atteso,ottenuto,pit,scostamento_pct,esito_scostamento,ammissibile,divergenze_pct,problemi_config,esito,messaggio
+2026-09-22 19:52:28,1,N1R,N1_k12_replica_m0042,42,identico_osservativo,2.2348,2.2348,0.000125,0.0,ok,si,0.613,,ok,IDENTICO allo studio osservativo (2.2348)

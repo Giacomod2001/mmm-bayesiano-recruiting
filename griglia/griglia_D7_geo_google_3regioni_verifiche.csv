@@ -1,0 +1,9 @@
+quando,n,codice,nome,seed_mondo,regola,atteso,ottenuto,pit,scostamento_pct,esito_scostamento,ammissibile,divergenze_pct,problemi_config,esito,messaggio
+2026-09-15 22:01:25,17,D7,D7_geo_google3_m0042,42,prima_misura,,2.1611,0.003625,,prima_misura,si,0.037,,ok,prima misura: nessun atteso sul numero (collaudo di sola configurazione)
+2026-09-15 22:08:52,18,D7,D7_geo_google3_m0101,101,prima_misura,,2.0663,0.00075,,prima_misura,si,0.037,,ok,prima misura: nessun atteso sul numero (collaudo di sola configurazione)
+2026-09-15 22:19:13,19,D7,D7_geo_google3_m0102,102,prima_misura,,1.7824,0.017,,prima_misura,si,0.15,,ok,prima misura: nessun atteso sul numero (collaudo di sola configurazione)
+2026-09-15 22:29:53,20,D7,D7_geo_google3_m0103,103,prima_misura,,2.2588,0.000125,,prima_misura,si,0.125,,ok,prima misura: nessun atteso sul numero (collaudo di sola configurazione)
+2026-09-15 22:40:28,21,D7,D7_geo_google3_m0104,104,prima_misura,,2.6058,0.0,,prima_misura,si,0.025,,ok,prima misura: nessun atteso sul numero (collaudo di sola configurazione)
+2026-09-15 22:56:35,22,D7,D7_geo_google3_m0105,105,prima_misura,,2.0015,0.001,,prima_misura,si,3.763,,ok,prima misura: nessun atteso sul numero (collaudo di sola configurazione) ; divergenze 3.763% > 1%
+2026-09-15 23:07:14,23,D7,D7_geo_google3_m0106,106,prima_misura,,1.4753,0.068125,,prima_misura,si,0.037,,ok,prima misura: nessun atteso sul numero (collaudo di sola configurazione)
+2026-09-15 23:18:33,24,D7,D7_geo_google3_m0107,107,prima_misura,,1.8022,0.004375,,prima_misura,si,0.1,,ok,prima misura: nessun atteso sul numero (collaudo di sola configurazione)

@@ -1,0 +1,4 @@
+quando,n,codice,nome,seed_mondo,regola,atteso,ottenuto,pit,scostamento_pct,esito_scostamento,ammissibile,divergenze_pct,problemi_config,esito,messaggio
+2026-09-16 09:37:50,86,D9,D9a_prior_ln_s150_m0042,42,prima_misura,,2.4593,0.000125,,prima_misura,si,0.225,,ok,prima misura: nessun atteso sul numero (collaudo di sola configurazione)
+2026-09-16 09:48:20,87,D9,D9b_prior_ln_s050_m0042,42,prima_misura,,1.6596,0.011,,prima_misura,si,1.35,,ok,prima misura: nessun atteso sul numero (collaudo di sola configurazione) ; divergenze 1.35% > 1%
+2026-09-16 09:58:44,88,D9,D9c_prior_benchmark_s090_m0042,42,prima_misura,,2.4788,0.0,,prima_misura,si,1.0,,ok,prima misura: nessun atteso sul numero (collaudo di sola configurazione)

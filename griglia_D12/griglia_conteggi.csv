@@ -1,0 +1,3 @@
+disegno,insieme,N,soglia_identificazione,C_tot,C_k,larghezza_mediana_k,rapporto_mediano,rho_mediano,N_ok
+D12,tutti,8,6,4,Altre job board=8;Google Ads=7;Indeed=8;Jooble=8;LinkedIn Ads=8;Meta Ads=8;Subito Lavoro=8,Altre job board=4.0578;Google Ads=1.4053;Indeed=2.9569;Jooble=4.1795;LinkedIn Ads=3.2053;Meta Ads=2.626;Subito Lavoro=3.8815,1.2885,-0.0536,7
+D12,ammissibili,8,6,4,Altre job board=8;Google Ads=7;Indeed=8;Jooble=8;LinkedIn Ads=8;Meta Ads=8;Subito Lavoro=8,Altre job board=4.0578;Google Ads=1.4053;Indeed=2.9569;Jooble=4.1795;LinkedIn Ads=3.2053;Meta Ads=2.626;Subito Lavoro=3.8815,1.2885,-0.0536,7

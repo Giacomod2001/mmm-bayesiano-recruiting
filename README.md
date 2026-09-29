@@ -34,6 +34,11 @@ perché lì la verità non è osservabile.
 **3. Rigenerare tutto da zero.** Il generatore e il verificatore sono nel repo:
 `python genera_dati_simulati.py --tutte`, poi `python verifica_dati_simulati.py`.
 
+**4. Controllare gli esperimenti.** Per lo studio di copertura, la griglia
+sperimentale e le prove successive ci sono la regola di lettura fissata prima
+del run, il notebook che l'ha eseguito, i file prodotti dal run e i risultati.
+La mappa è nella sezione [Gli esperimenti della tesi](#gli-esperimenti-della-tesi).
+
 ---
 
 ## Il notebook end-to-end
@@ -91,6 +96,13 @@ pipeline/
 vm_check/                   collaudo dell'ambiente prima dei dati reali
 confronto_robyn_meridian/   protocollo e notebook del confronto Robyn/Meridian
 examples/                   un model_fit.json di esempio
+
+preregistrazioni/           una pre-registrazione per disegno, prima del run
+colab_copertura*.ipynb      lo studio di copertura (osservativo e randomizzato)
+colab_griglia*.ipynb        la griglia sperimentale e i disegni successivi
+copertura/, griglia*/       i file prodotti dai run, coi byte del run
+RISULTATI_*.md              un file dei risultati per prova, scritto dopo il run
+esperimenti/                i generatori dei mondi di controllo (Sez. 5.8)
 ```
 
 ---
@@ -114,6 +126,46 @@ quattro job board sono canali **separati** e non un aggregato: la categoria non
 
 Le varianti diagnostiche restano fuori dal repo perché rigenerabili e non usate
 per il fit: i comandi sono in [`dati_simulati/README.md`](dati_simulati/README.md).
+
+---
+
+## Gli esperimenti della tesi
+
+La Parte III e l'Appendice A della tesi poggiano su questi file. Dalla griglia
+in poi ogni prova ha una pre-registrazione in
+[`preregistrazioni/`](preregistrazioni/), scritta prima del run, che fissa
+domanda, metrica, soglie e previsione. Lo studio di copertura, che la precede,
+ha la regola di lettura scritta nel notebook, prima del ciclo dei fit. I
+risultati stanno in file separati, scritti dopo.
+
+| Prova | Notebook o script | File del run | Risultati |
+|---|---|---|---|
+| Studio di copertura, osservativo | `colab_copertura.ipynb`, `studio_copertura_runner.py` | `copertura/copertura_risultati.csv` | Tabella A.4 |
+| Studio di copertura, mondo randomizzato | `colab_copertura_randomizzata.ipynb` | `copertura/*_randomizzato*.csv` | Tabella A.5 |
+| Griglia D0-D9 (96 fit su otto mondi) | `colab_griglia.ipynb` | `griglia/` | `griglia/griglia_riepilogo.csv` |
+| D10 calendario a quattro giri | `colab_griglia_D10.ipynb` | `griglia_D10/` | `RISULTATI_D10_*.md` |
+| D11 riparto controfattuale | `allocatore_D11_D11b/studio_D11.py` | `allocatore_D11_D11b/` | `RISULTATI_D11_*.md` |
+| D12 blackout totale, D13 baseline osservata | `colab_griglia_D12.ipynb`, `colab_griglia_D13.ipynb`, `analisi_D12_D13.py` | `griglia_D12/`, `griglia_D13/`, `controlli_fedelta_D12_D13/` | `RISULTATI_D12_*.md` |
+| R1 riallocazione | `riallocazione_R1/studio_R1.py` | `riallocazione_R1/` | `RISULTATI_R1_*.md` |
+| N1 nodi della baseline | `colab_griglia_N1_nodi.ipynb`, `analisi_N1_nodi.py` | `griglia_N1/`, `controlli_fedelta_N1/` | `RISULTATI_N1_*.md` |
+| Robyn a verità nota | `confronto_robyn_verita_nota/colab_robyn_mondo42.ipynb` | `confronto_robyn_verita_nota/risultati_run/` | `confronto_robyn_verita_nota/ROBYN_RISULTATI_verita_nota.md` |
+| D13b baseline osservata a un nodo | `colab_griglia_D13b_1nodo.ipynb`, `analisi_D13b.py` | `griglia_D13b_1nodo/`, `controlli_fedelta_D13b/` | `RISULTATI_D13b_*.md` |
+| D14 allocatore sui ROAS del benchmark | `allocatore_D14/studio_D14.py` | `allocatore_D14/` | `RISULTATI_D14_*.md` |
+
+I notebook della griglia clonano questo repository, ricostruiscono il generatore
+da `main` con le patch che portano dentro e ne controllano l'impronta prima di
+generare i mondi. Poi rigenerano i dataset del mondo 42 e li confrontano con
+quelli in `dati_simulati/`. Per questo `genera_dati_simulati.py` e
+`dati_simulati/` non si toccano: una modifica fermerebbe quei controlli.
+
+Le cartelle dei run sono conservate coi byte prodotti dal run. Il
+`.gitattributes` impedisce a git di convertire i fine riga, perché la
+conversione cambierebbe le impronte.
+
+**Sulle date.** In questo repository i file degli esperimenti sono entrati
+tutti insieme il 29 settembre 2026. Sono copiati identici dal repository di
+lavoro, dove ciascuna pre-registrazione ha il commit con la sua data. Quelle
+sono le date riportate nella Tabella A.11 della tesi.
 
 ---
 

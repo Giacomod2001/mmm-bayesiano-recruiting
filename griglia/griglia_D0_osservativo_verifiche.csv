@@ -1,0 +1,9 @@
+quando,n,codice,nome,seed_mondo,regola,atteso,ottenuto,pit,scostamento_pct,esito_scostamento,ammissibile,divergenze_pct,problemi_config,esito,messaggio
+2026-09-15 19:08:31,1,D0,D0_base_m0042,42,identico_osservativo,2.2348,2.2348,0.000125,0.0,ok,si,0.613,,ok,IDENTICO allo studio osservativo (2.2348)
+2026-09-15 19:17:28,2,D0,D0_base_m0101,101,identico_osservativo,2.4623,2.4623,0.0,0.0,ok,si,0.1,,ok,IDENTICO allo studio osservativo (2.4623)
+2026-09-15 19:28:35,3,D0,D0_base_m0102,102,identico_osservativo,2.2105,2.2105,0.000625,0.0,ok,si,0.625,,ok,IDENTICO allo studio osservativo (2.2105)
+2026-09-15 19:39:27,4,D0,D0_base_m0103,103,identico_osservativo,2.5835,2.5835,0.0,0.0,ok,si,0.037,,ok,IDENTICO allo studio osservativo (2.5835)
+2026-09-15 19:50:34,5,D0,D0_base_m0104,104,identico_osservativo,2.5481,2.5481,0.0,0.0,ok,si,0.025,,ok,IDENTICO allo studio osservativo (2.5481)
+2026-09-15 20:01:12,6,D0,D0_base_m0105,105,identico_osservativo,1.9811,1.9811,0.0005,0.0,ok,si,0.25,,ok,IDENTICO allo studio osservativo (1.9811)
+2026-09-15 20:12:57,7,D0,D0_base_m0106,106,identico_osservativo,2.0244,2.0244,0.001625,0.0,ok,si,0.013,,ok,IDENTICO allo studio osservativo (2.0244)
+2026-09-15 20:24:15,8,D0,D0_base_m0107,107,identico_osservativo,1.6106,1.6106,0.047625,0.0,ok,si,0.075,,ok,IDENTICO allo studio osservativo (1.6106)

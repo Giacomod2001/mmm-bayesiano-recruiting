@@ -1,0 +1,9 @@
+disegno,insieme,N,soglia_identificazione,C_tot,C_k,larghezza_mediana_k,rapporto_mediano,rho_mediano,N_ok
+N1R,tutti,1,1,0,,,2.2348,-0.8214,0
+N1R,ammissibili,1,1,0,,,2.2348,-0.8214,0
+N1K01,tutti,8,6,0,,,1.8131,0.0,0
+N1K01,ammissibili,8,6,0,,,1.8131,0.0,0
+N1K03,tutti,8,6,0,,,2.2861,-0.1071,0
+N1K03,ammissibili,8,6,0,,,2.2861,-0.1071,0
+N1K06,tutti,8,6,0,,,2.2695,-0.0536,0
+N1K06,ammissibili,8,6,0,,,2.2695,-0.0536,0

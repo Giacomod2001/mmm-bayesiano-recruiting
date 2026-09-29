@@ -1,0 +1,2 @@
+43b4cf866856ed7ad0b9aba2b69ea3c7b06500817fa9ef8e86294953c73c9cb8  PREREGISTRAZIONE_D14_allocatore_ROAS_benchmark.md
+congelata 2026-09-24T22:44:34Z, prima di qualunque calcolo di D14

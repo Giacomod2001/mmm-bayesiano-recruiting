@@ -1,0 +1,9 @@
+n,codice,nome,seed_mondo,regola,atteso,ottenuto,pit,scostamento_pct,esito_scostamento,ammissibile,divergenze_pct,problemi_config,esito,messaggio
+1,D12,D12_blackout_m0042,42,prima_misura,,1.2366,0.0515,,prima_misura,si,1.9,,ok,prima misura: nessun atteso sul numero (collaudo di sola configurazione) ; divergenze 1.9% > 1%
+2,D12,D12_blackout_m0101,101,prima_misura,,1.5679,0.0005,,prima_misura,si,0.037,,ok,prima misura: nessun atteso sul numero (collaudo di sola configurazione)
+3,D12,D12_blackout_m0102,102,prima_misura,,1.3444,0.012375,,prima_misura,si,2.913,,ok,prima misura: nessun atteso sul numero (collaudo di sola configurazione) ; divergenze 2.913% > 1%
+4,D12,D12_blackout_m0103,103,prima_misura,,1.1449,0.169625,,prima_misura,si,0.013,,ok,prima misura: nessun atteso sul numero (collaudo di sola configurazione)
+5,D12,D12_blackout_m0104,104,prima_misura,,1.3121,0.01675,,prima_misura,si,0.0,,ok,prima misura: nessun atteso sul numero (collaudo di sola configurazione)
+6,D12,D12_blackout_m0105,105,prima_misura,,1.3473,0.008625,,prima_misura,si,0.613,,ok,prima misura: nessun atteso sul numero (collaudo di sola configurazione)
+7,D12,D12_blackout_m0106,106,prima_misura,,1.1301,0.22075,,prima_misura,si,0.0,,ok,prima misura: nessun atteso sul numero (collaudo di sola configurazione)
+8,D12,D12_blackout_m0107,107,prima_misura,,1.2649,0.059625,,prima_misura,si,0.05,,ok,prima misura: nessun atteso sul numero (collaudo di sola configurazione)

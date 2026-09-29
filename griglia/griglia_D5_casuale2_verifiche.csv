@@ -1,0 +1,9 @@
+quando,n,codice,nome,seed_mondo,regola,atteso,ottenuto,pit,scostamento_pct,esito_scostamento,ammissibile,divergenze_pct,problemi_config,esito,messaggio
+2026-09-16 08:08:23,62,D5,D5_casuale2_m0042,42,replica_4dec,1.99,1.9654,0.00475,-1.236,ok,si,1.6,,ok,scostamento -1.24% nella banda attesa -1.70..-1.00% (dati a 4 decimali contro 3) ; divergenze 1.6% > 1%
+2026-09-16 08:18:50,63,D5,D5_casuale2_m0101,101,prima_misura,,2.6253,0.0,,prima_misura,si,0.037,,ok,prima misura: nessun atteso sul numero (collaudo di sola configurazione)
+2026-09-16 08:34:58,64,D5,D5_casuale2_m0102,102,prima_misura,,2.1456,0.000625,,prima_misura,si,6.787,,ok,prima misura: nessun atteso sul numero (collaudo di sola configurazione) ; divergenze 6.787% > 1%
+2026-09-16 08:45:24,65,D5,D5_casuale2_m0103,103,prima_misura,,2.3822,0.0,,prima_misura,si,0.613,,ok,prima misura: nessun atteso sul numero (collaudo di sola configurazione)
+2026-09-16 08:55:57,66,D5,D5_casuale2_m0104,104,prima_misura,,2.7231,0.0,,prima_misura,si,0.263,,ok,prima misura: nessun atteso sul numero (collaudo di sola configurazione)
+2026-09-16 09:06:18,67,D5,D5_casuale2_m0105,105,prima_misura,,2.2166,0.000875,,prima_misura,si,0.4,,ok,prima misura: nessun atteso sul numero (collaudo di sola configurazione)
+2026-09-16 09:16:50,68,D5,D5_casuale2_m0106,106,prima_misura,,1.9811,0.001375,,prima_misura,si,0.588,,ok,prima misura: nessun atteso sul numero (collaudo di sola configurazione)
+2026-09-16 09:27:10,69,D5,D5_casuale2_m0107,107,prima_misura,,1.7814,0.024625,,prima_misura,si,0.0,,ok,prima misura: nessun atteso sul numero (collaudo di sola configurazione)

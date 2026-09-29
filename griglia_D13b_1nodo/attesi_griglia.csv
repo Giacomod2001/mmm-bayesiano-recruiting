@@ -1,0 +1,10 @@
+n,codice,nome,disegno,seed_mondo,parametri_disegno,canali_trattati,dose_per_canale,controllo_baseline,regola,atteso,banda_min_pct,banda_max_pct,anomalia_min_pct,anomalia_max_pct,impronta_attesa,riduzione_attesa_pct,knots_per_quarter,n_knots,keep,n_chains,adapt,burnin,seed_mcmc,revenue_per_kpi,prior_tipo,prior_sigma,prior_mu,decimali_stagionalita,csv
+1,D13bR,D13b_k12_replica_f030_m0101,base,101,,,,0.3,identico_osservativo,2.4593,,,,,7eaa88ed1323,,12,96,2000,4,500,500,42,40.0,riferimento,0.9,0.2,4,griglia_D13b_replica_k12.csv
+2,D13b,D13b_k01_f030_m0042,base,42,,,,0.3,prima_misura,,,,,,b3215553829a,,1,8,2000,4,500,500,42,40.0,riferimento,0.9,0.2,4,griglia_D13b_k01.csv
+3,D13b,D13b_k01_f030_m0101,base,101,,,,0.3,prima_misura,,,,,,7eaa88ed1323,,1,8,2000,4,500,500,42,40.0,riferimento,0.9,0.2,4,griglia_D13b_k01.csv
+4,D13b,D13b_k01_f030_m0102,base,102,,,,0.3,prima_misura,,,,,,565abd654b6a,,1,8,2000,4,500,500,42,40.0,riferimento,0.9,0.2,4,griglia_D13b_k01.csv
+5,D13b,D13b_k01_f030_m0103,base,103,,,,0.3,prima_misura,,,,,,29b7941e94a3,,1,8,2000,4,500,500,42,40.0,riferimento,0.9,0.2,4,griglia_D13b_k01.csv
+6,D13b,D13b_k01_f030_m0104,base,104,,,,0.3,prima_misura,,,,,,96fa64a16f1f,,1,8,2000,4,500,500,42,40.0,riferimento,0.9,0.2,4,griglia_D13b_k01.csv
+7,D13b,D13b_k01_f030_m0105,base,105,,,,0.3,prima_misura,,,,,,c6262d1d1d30,,1,8,2000,4,500,500,42,40.0,riferimento,0.9,0.2,4,griglia_D13b_k01.csv
+8,D13b,D13b_k01_f030_m0106,base,106,,,,0.3,prima_misura,,,,,,35c658e7d251,,1,8,2000,4,500,500,42,40.0,riferimento,0.9,0.2,4,griglia_D13b_k01.csv
+9,D13b,D13b_k01_f030_m0107,base,107,,,,0.3,prima_misura,,,,,,cb44b26282bc,,1,8,2000,4,500,500,42,40.0,riferimento,0.9,0.2,4,griglia_D13b_k01.csv

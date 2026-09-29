@@ -1,0 +1,9 @@
+caso,seme,y0,g_b_abs,g_b,g_b_atteso,g_b_ok,g_c,g_c_atteso,g_c_ok,nullo90,nullo90_atteso,nullo90_ok,p_b_lt,p_b_le,p_b_atteso,p_b_pari,p_b_ok_lt,p_b_ok_le,f_b,f_b_atteso,f_b_ok,eur_b,eur_b_atteso,eur_b_ok,eur_c,eur_c_atteso,eur_c_ok,riparto
+D1/101,101,158329.5,-236.7,-0.149,-0.149,True,-1.033,-1.033,True,770.6,770.6,True,0.565,0.565,0.565,0,True,True,-0.221,-0.221,True,75590.33,75590,True,123173.06,123173,True,Indeed=+15.00;Google Ads=-4.19;LinkedIn Ads=-4.19
+D1/103,103,158329.8,-189.7,-0.12,-0.12,True,-1.261,-1.261,True,512.2,512.2,True,0.5,0.5,0.5,0,True,True,-0.183,-0.183,True,79300.71,79301,True,125451.33,125451,True,Indeed=+15.00;LinkedIn Ads=-4.13;Google Ads=-4.13
+D1/105,105,158330.8,564.2,0.356,0.356,True,-1.298,-1.298,True,564.2,564.2,True,0.89,0.905,0.89,3,True,False,0.437,0.437,True,77081.0,77081,True,117643.3,117643,True,Indeed=+15.00;LinkedIn Ads=-13.70
+D1/107,107,158329.7,-1343.4,-0.848,-0.848,True,-1.178,-1.178,True,679.6,679.6,True,0.47,0.52,0.47,10,True,False,-0.758,-0.758,True,145078.76,145079,True,123073.88,123074,True,Meta Ads=+15.00;Google Ads=-11.04
+D2/102,102,158329.1,577.2,0.365,0.365,True,-1.06,-1.06,True,601.9,601.9,True,0.835,0.88,0.88,9,False,True,0.463,0.463,True,74736.64,74737,True,116787.72,116788,True,Indeed=+15.00;LinkedIn Ads=-13.43
+D2/103,103,158329.8,-130.2,-0.082,-0.082,True,-1.261,-1.261,True,512.2,512.2,True,0.53,0.56,0.56,6,False,True,-0.125,-0.125,True,79300.7,79301,True,125451.29,125451,True,Indeed=+15.00;Meta Ads=-8.44
+D10/42,42,158330.7,274.6,0.173,0.173,True,-1.271,-1.271,True,753.4,753.4,True,0.665,0.69,0.69,5,False,True,0.227,0.227,True,76726.19,76726,True,112945.1,112945,True,Indeed=+13.95;LinkedIn Ads=-15.00
+D10/103,103,158329.8,-130.2,-0.082,-0.082,True,-1.261,-1.261,True,512.2,512.2,True,0.53,0.56,0.53,6,True,False,-0.125,-0.125,True,79300.7,79301,True,125451.3,125451,True,Indeed=+15.00;Meta Ads=-8.44

@@ -1,0 +1,9 @@
+quando,n,codice,nome,seed_mondo,regola,atteso,ottenuto,pit,scostamento_pct,esito_scostamento,ammissibile,divergenze_pct,problemi_config,esito,messaggio
+2026-09-16 11:12:59,54,D4,D4_pause2_m0042,42,replica_4dec,2.17,2.1084,0.001375,-2.839,anomalia,si,0.0,,anomalia,scostamento -2.84% SOTTO la soglia -2.00% dal 2.17 del registro
+2026-09-16 11:23:04,55,D4,D4_pause2_m0101,101,prima_misura,,2.0238,0.0005,,prima_misura,si,0.037,,ok,prima misura: nessun atteso sul numero (collaudo di sola configurazione)
+2026-09-16 11:38:55,56,D4,D4_pause2_m0102,102,prima_misura,,2.0821,0.000625,,prima_misura,si,0.713,,ok,prima misura: nessun atteso sul numero (collaudo di sola configurazione)
+2026-09-16 11:49:05,57,D4,D4_pause2_m0103,103,prima_misura,,2.0476,0.0,,prima_misura,si,0.037,,ok,prima misura: nessun atteso sul numero (collaudo di sola configurazione)
+2026-09-16 11:59:33,58,D4,D4_pause2_m0104,104,prima_misura,,2.3381,0.0,,prima_misura,si,0.075,,ok,prima misura: nessun atteso sul numero (collaudo di sola configurazione)
+2026-09-16 12:09:58,59,D4,D4_pause2_m0105,105,prima_misura,,1.7191,0.00925,,prima_misura,si,0.625,,ok,prima misura: nessun atteso sul numero (collaudo di sola configurazione)
+2026-09-16 12:20:24,60,D4,D4_pause2_m0106,106,prima_misura,,2.1163,0.000125,,prima_misura,si,2.087,,ok,prima misura: nessun atteso sul numero (collaudo di sola configurazione) ; divergenze 2.087% > 1%
+2026-09-16 12:30:44,61,D4,D4_pause2_m0107,107,prima_misura,,1.5929,0.027,,prima_misura,si,0.812,,ok,prima misura: nessun atteso sul numero (collaudo di sola configurazione)

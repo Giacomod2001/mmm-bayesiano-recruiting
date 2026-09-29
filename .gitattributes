@@ -11,3 +11,26 @@
 *.jpeg binary
 *.gif binary
 *.pdf binary
+
+# I risultati della griglia sono i file esatti prodotti dal runner su Colab:
+# il CSV writer scrive CRLF, e vanno conservati com'erano. Senza questa riga
+# "* text=auto" li normalizzerebbe a LF e il repo non conterrebbe piu' i byte
+# che il run ha prodotto.
+griglia/** -text
+
+# Stessa ragione per D10: il runner scrive CRLF, e i risultati vanno conservati
+# coi byte che il run ha prodotto.
+griglia_D10/** -text
+
+# Stessa ragione per lo studio di copertura: sono i file esatti prodotti dal
+# runner, con i loro CRLF.
+copertura/** -text
+
+# Stessa ragione per D12 e D13: le cartelle scaricate da Drive, coi byte del run.
+griglia_D12/** -text
+griglia_D13/** -text
+griglia_N1/** -text
+griglia_D13b_1nodo/** -text
+
+# D14: i CSV scritti dal run hanno CRLF e si conservano coi byte consegnati.
+allocatore_D14/** -text

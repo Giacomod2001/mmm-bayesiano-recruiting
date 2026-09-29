@@ -1,0 +1,9 @@
+quando,n,codice,nome,seed_mondo,regola,atteso,ottenuto,pit,scostamento_pct,esito_scostamento,ammissibile,divergenze_pct,problemi_config,esito,messaggio
+2026-09-16 14:17:16,78,D8,D8_geo_google_sfalsato_m0042,42,prima_misura,,2.5878,0.0,,prima_misura,si,0.113,,ok,prima misura: nessun atteso sul numero (collaudo di sola configurazione)
+2026-09-16 14:30:35,79,D8,D8_geo_google_sfalsato_m0101,101,prima_misura,,2.3836,0.0,,prima_misura,si,0.062,,ok,prima misura: nessun atteso sul numero (collaudo di sola configurazione)
+2026-09-16 14:41:04,80,D8,D8_geo_google_sfalsato_m0102,102,prima_misura,,1.8607,0.0095,,prima_misura,si,1.288,,ok,prima misura: nessun atteso sul numero (collaudo di sola configurazione) ; divergenze 1.288% > 1%
+2026-09-16 14:51:30,81,D8,D8_geo_google_sfalsato_m0103,103,prima_misura,,2.1046,0.00075,,prima_misura,si,0.087,,ok,prima misura: nessun atteso sul numero (collaudo di sola configurazione)
+2026-09-16 15:07:00,82,D8,D8_geo_google_sfalsato_m0104,104,prima_misura,,2.7706,0.0,,prima_misura,si,0.0,,ok,prima misura: nessun atteso sul numero (collaudo di sola configurazione)
+2026-09-16 15:17:29,83,D8,D8_geo_google_sfalsato_m0105,105,prima_misura,,1.8102,0.006625,,prima_misura,si,2.95,,ok,prima misura: nessun atteso sul numero (collaudo di sola configurazione) ; divergenze 2.95% > 1%
+2026-09-16 15:29:50,84,D8,D8_geo_google_sfalsato_m0106,106,prima_misura,,1.6446,0.041625,,prima_misura,si,0.062,,ok,prima misura: nessun atteso sul numero (collaudo di sola configurazione)
+2026-09-16 15:40:07,85,D8,D8_geo_google_sfalsato_m0107,107,prima_misura,,1.9908,0.00275,,prima_misura,si,0.025,,ok,prima misura: nessun atteso sul numero (collaudo di sola configurazione)

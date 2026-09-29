@@ -1,0 +1,9 @@
+ANOMALIA sul run 54 (D4_pause2_m0042, disegno D4)
+2026-09-16 11:12:59
+
+esito del controllo: anomalia
+atteso: 2.17   ottenuto: 2.1084   scostamento: -2.839%
+messaggio: scostamento -2.84% SOTTO la soglia -2.00% dal 2.17 del registro
+
+Il ciclo e' proseguito. La riga resta nel CSV del disegno con esito "anomalia": va guardata al ritorno.
+Se la causa e' nella pipeline anche le altre righe sono sospette.

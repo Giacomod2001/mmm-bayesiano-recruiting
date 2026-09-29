@@ -1,0 +1,57 @@
+inizio run 2026-09-24T22:46:18Z
+D14 - allocatore sui ROAS del benchmark interno
+pre-registrazione sha256 43b4cf866856ed7ad0b9aba2b69ea3c7b06500817fa9ef8e86294953c73c9cb8  (congelata, identica)
+
+CANCELLO
+  seme  42  ROAS del benchmark dal file contro generatore: scarto massimo -0,0120% (Jooble)  OK
+  seme 101  ROAS del benchmark dal file contro generatore: scarto massimo -0,0140% (LinkedIn Ads)  OK
+  seme 102  ROAS del benchmark dal file contro generatore: scarto massimo -0,0110% (Jooble)  OK
+  seme 103  ROAS del benchmark dal file contro generatore: scarto massimo 0,0095% (Jooble)  OK
+  seme 105  ROAS del benchmark dal file contro generatore: scarto massimo -0,0121% (Jooble)  OK
+  seme 107  ROAS del benchmark dal file contro generatore: scarto massimo -0,0324% (Jooble)  OK
+  D1   101  non fare niente 158329,535 (D11 158329,535)  allocatore del modello -1,0332% (D11 -1,0332%)  OK
+  D1   103  non fare niente 158329,797 (D11 158329,797)  allocatore del modello -1,2608% (D11 -1,2608%)  OK
+  D1   105  non fare niente 158330,757 (D11 158330,757)  allocatore del modello -1,2984% (D11 -1,2985%)  OK
+  D1   107  non fare niente 158329,677 (D11 158329,677)  allocatore del modello -1,1779% (D11 -1,1779%)  OK
+  D2   102  non fare niente 158329,071 (D11 158329,071)  allocatore del modello -1,0605% (D11 -1,0605%)  OK
+  D2   103  non fare niente 158329,797 (D11 158329,797)  allocatore del modello -1,2608% (D11 -1,2608%)  OK
+  D10   42  non fare niente 158330,663 (D11 158330,663)  allocatore del modello -1,2714% (D11 -1,2714%)  OK
+  D10  103  non fare niente 158329,797 (D11 158329,797)  allocatore del modello -1,2608% (D11 -1,2608%)  OK
+CANCELLO: PASSATO  (1,4 s)
+
+PARTE A - allocatore sui ROAS del benchmark (fattori del generatore)
+  D1   101  g 1,1119%  p(R1) 0,920  f 0,363 | nullo R1 p90 0,4857% | oracolo 3,0606% | modello -1,0332% | banda: p 0,967, migliore 1,6851% | mossi 12,05% del budget
+  D1   103  g 0,5852%  p(R1) 0,965  f 0,283 | nullo R1 p90 -0,9183% | oracolo 2,0701% | modello -1,2608% | banda: p 0,974, migliore 0,6846% | mossi 11,53% del budget
+  D1   105  g 1,2279%  p(R1) 0,955  f 0,421 | nullo R1 p90 -0,5687% | oracolo 2,9145% | modello -1,2985% | banda: p 0,974, migliore 1,6857% | mossi 12,13% del budget
+  D1   107  g 1,1809%  p(R1) 0,955  f 0,412 | nullo R1 p90 -0,2785% | oracolo 2,8662% | modello -1,1779% | banda: p 0,974, migliore 1,6997% | mossi 12,03% del budget
+  D2   102  g 1,3389%  p(R1) 0,950  f 0,368 | nullo R1 p90 0,8986% | oracolo 3,6421% | modello -1,0605% | banda: p 0,957, migliore 2,2054% | mossi 12,34% del budget
+  D2   103  g 0,5852%  p(R1) 0,965  f 0,283 | nullo R1 p90 -0,9183% | oracolo 2,0701% | modello -1,2608% | banda: p 0,974, migliore 0,6846% | mossi 11,53% del budget
+  D10   42  g 0,9956%  p(R1) 0,935  f 0,366 | nullo R1 p90 0,0317% | oracolo 2,7232% | modello -1,2714% | banda: p 0,950, migliore 2,0187% | mossi 12,02% del budget
+  D10  103  g 0,5852%  p(R1) 0,965  f 0,283 | nullo R1 p90 -0,9183% | oracolo 2,0701% | modello -1,2608% | banda: p 0,974, migliore 0,6846% | mossi 11,53% del budget
+  8 casi: g% mediano 1,0537%, g>0 in 8/8, p(R1)>=0,90 in 8/8, meglio del modello in 8/8
+  6 mondi distinti (descrittivo): g% mediano 1,1464%, g>0 in 6/6, p(R1)>=0,90 in 6/6
+  banda (descrittivo): p mediano 0,974; f mediano 0,364
+RAMO CALCOLATO PARTE A: A1 SUCCESSO  (4,7 s)
+
+PARTE B1 - errore casuale lognormale (200 estrazioni per livello)
+  sigma 0,00: repliche che soddisfano 0/200 -> non soddisfa | g% mediano -1,4214%, g>0 0,0%, p mediano 0,943, p>=0,90 62,5%
+  sigma 0,10: repliche che soddisfano 5/200 -> non soddisfa | g% mediano -1,2739%, g>0 17,1%, p mediano 0,955, p>=0,90 71,1%
+  sigma 0,25: repliche che soddisfano 35/200 -> non soddisfa | g% mediano -1,2739%, g>0 33,8%, p mediano 0,955, p>=0,90 73,2%
+  sigma 0,50: repliche che soddisfano 14/200 -> non soddisfa | g% mediano -1,2739%, g>0 28,9%, p mediano 0,930, p>=0,90 57,2%
+  sigma 0,75: repliche che soddisfano 11/200 -> non soddisfa | g% mediano -1,3530%, g>0 23,1%, p mediano 0,895, p>=0,90 45,8%
+  sigma 1,00: repliche che soddisfano 5/200 -> non soddisfa | g% mediano -1,6118%, g>0 21,1%, p mediano 0,885, p>=0,90 39,1%
+B1 livelli che soddisfano il criterio: nessuno
+B1 SOGLIA DI TOLLERANZA: nemmeno con ROAS esatti  (7,1 s)
+
+PARTE B2 - errore sistematico: piu' credito a chi chiude il percorso
+  delta 0,00 (rapporto 1,00): g% mediano -1,4214%, p>=0,90 in 5/8 -> non soddisfa
+  delta 0,10 (rapporto 1,22): g% mediano 1,0537%, p>=0,90 in 8/8 -> SODDISFA
+  delta 0,25 (rapporto 1,65): g% mediano 1,0537%, p>=0,90 in 8/8 -> SODDISFA
+  delta 0,50 (rapporto 2,72): g% mediano 1,0537%, p>=0,90 in 8/8 -> SODDISFA
+  delta 0,75 (rapporto 4,48): g% mediano 1,0537%, p>=0,90 in 8/8 -> SODDISFA
+  delta 1,00 (rapporto 7,39): g% mediano 1,0537%, p>=0,90 in 8/8 -> SODDISFA
+B2 livelli che soddisfano il criterio: 0,10, 0,25, 0,50, 0,75, 1,00
+B2 SOGLIA DI TOLLERANZA: nemmeno con ROAS esatti  (0,0 s)
+
+TEMPO TOTALE 13,2 s
+fine run 2026-09-24T22:46:38Z

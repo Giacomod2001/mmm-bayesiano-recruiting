@@ -1,0 +1,9 @@
+quando,n,codice,nome,seed_mondo,regola,atteso,ottenuto,pit,scostamento_pct,esito_scostamento,ammissibile,divergenze_pct,problemi_config,esito,messaggio
+2026-09-15 20:35:10,9,D1,D1_geo_m0042,42,replica_4dec,1.79,1.7934,0.0205,0.19,fuori_banda,si,0.05,,segnalato,scostamento +0.19% fuori dalla banda -1.70..-1.00% ma dentro le soglie: segnalato
+2026-09-15 20:42:47,10,D1,D1_geo_m0101,101,prima_misura,,2.0626,0.001125,,prima_misura,si,0.35,,ok,prima misura: nessun atteso sul numero (collaudo di sola configurazione)
+2026-09-15 20:53:58,11,D1,D1_geo_m0102,102,prima_misura,,1.3039,0.200875,,prima_misura,si,0.062,,ok,prima misura: nessun atteso sul numero (collaudo di sola configurazione)
+2026-09-15 21:04:51,12,D1,D1_geo_m0103,103,prima_misura,,2.1598,0.00075,,prima_misura,si,0.05,,ok,prima misura: nessun atteso sul numero (collaudo di sola configurazione)
+2026-09-15 21:15:33,13,D1,D1_geo_m0104,104,prima_misura,,2.4182,0.0,,prima_misura,si,0.025,,ok,prima misura: nessun atteso sul numero (collaudo di sola configurazione)
+2026-09-15 21:27:49,14,D1,D1_geo_m0105,105,prima_misura,,1.8568,0.001625,,prima_misura,si,0.025,,ok,prima misura: nessun atteso sul numero (collaudo di sola configurazione)
+2026-09-15 21:38:39,15,D1,D1_geo_m0106,106,prima_misura,,1.541,0.05275,,prima_misura,si,0.863,,ok,prima misura: nessun atteso sul numero (collaudo di sola configurazione)
+2026-09-15 21:50:39,16,D1,D1_geo_m0107,107,prima_misura,,1.8039,0.024125,,prima_misura,si,0.075,,ok,prima misura: nessun atteso sul numero (collaudo di sola configurazione)

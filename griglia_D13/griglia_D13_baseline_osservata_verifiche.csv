@@ -1,0 +1,10 @@
+quando,n,codice,nome,seed_mondo,regola,atteso,ottenuto,pit,scostamento_pct,esito_scostamento,ammissibile,divergenze_pct,problemi_config,esito,messaggio
+2026-09-21 18:22:26,1,D13,D13_baseline_f030_m0042,42,prima_misura,,2.3161,0.0005,,prima_misura,no,13.375,,non_ammissibile,"NON AMMISSIBILE (cap. 4.7): rhat_roi_m=1.166 > 1.1, rhat_beta_m=1.197 > 1.1, ess_roi_m=18.0 < 100, ess_beta_m=14.0 < 100 ; numero riportato, fuori dai conteggi principali ; divergenze 13.375% > 1%"
+2026-09-21 18:32:51,2,D13,D13_baseline_f030_m0101,101,prima_misura,,2.4593,0.0,,prima_misura,si,0.013,,ok,prima misura: nessun atteso sul numero (collaudo di sola configurazione)
+2026-09-21 18:48:40,3,D13,D13_baseline_f030_m0102,102,prima_misura,,2.1785,0.000875,,prima_misura,si,0.125,,ok,prima misura: nessun atteso sul numero (collaudo di sola configurazione)
+2026-09-21 18:59:09,4,D13,D13_baseline_f030_m0103,103,prima_misura,,2.6012,0.0,,prima_misura,si,0.15,,ok,prima misura: nessun atteso sul numero (collaudo di sola configurazione)
+2026-09-21 19:09:39,5,D13,D13_baseline_f030_m0104,104,prima_misura,,2.5264,0.0,,prima_misura,si,0.025,,ok,prima misura: nessun atteso sul numero (collaudo di sola configurazione)
+2026-09-21 23:59:49,6,D13,D13_baseline_f030_m0105,105,prima_misura,,1.9841,0.000875,,prima_misura,si,0.963,,ok,prima misura: nessun atteso sul numero (collaudo di sola configurazione)
+2026-09-22 00:10:38,7,D13,D13_baseline_f030_m0106,106,prima_misura,,1.9972,0.002625,,prima_misura,si,0.15,,ok,prima misura: nessun atteso sul numero (collaudo di sola configurazione)
+2026-09-22 00:21:34,8,D13,D13_baseline_f030_m0107,107,prima_misura,,1.6262,0.0545,,prima_misura,si,0.338,,ok,prima misura: nessun atteso sul numero (collaudo di sola configurazione)
+2026-09-22 00:32:57,9,D13,D13_baseline_f060_m0042,42,prima_misura,,2.2448,0.000375,,prima_misura,si,0.625,,ok,prima misura: nessun atteso sul numero (collaudo di sola configurazione)

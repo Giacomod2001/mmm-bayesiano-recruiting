@@ -1,0 +1,26 @@
+n,codice,nome,seed_mondo,regola,atteso,ottenuto,pit,scostamento_pct,esito_scostamento,ammissibile,divergenze_pct,problemi_config,esito,messaggio
+1,N1R,N1_k12_replica_m0042,42,identico_osservativo,2.2348,2.2348,0.000125,0.0,ok,si,0.613,,ok,IDENTICO allo studio osservativo (2.2348)
+2,N1K01,N1_k01_m0042,42,prima_misura,,1.8508,0.00025,,prima_misura,si,1.562,,ok,prima misura: nessun atteso sul numero (collaudo di sola configurazione) ; divergenze 1.562% > 1%
+3,N1K01,N1_k01_m0101,101,prima_misura,,1.717,0.001125,,prima_misura,si,0.212,,ok,prima misura: nessun atteso sul numero (collaudo di sola configurazione)
+4,N1K01,N1_k01_m0102,102,prima_misura,,1.7472,0.008875,,prima_misura,si,1.625,,ok,prima misura: nessun atteso sul numero (collaudo di sola configurazione) ; divergenze 1.625% > 1%
+5,N1K01,N1_k01_m0103,103,prima_misura,,1.9232,0.0,,prima_misura,si,0.025,,ok,prima misura: nessun atteso sul numero (collaudo di sola configurazione)
+6,N1K01,N1_k01_m0104,104,prima_misura,,2.0654,0.0,,prima_misura,si,0.013,,ok,prima misura: nessun atteso sul numero (collaudo di sola configurazione)
+7,N1K01,N1_k01_m0105,105,prima_misura,,1.8985,0.0,,prima_misura,si,0.237,,ok,prima misura: nessun atteso sul numero (collaudo di sola configurazione)
+8,N1K01,N1_k01_m0106,106,prima_misura,,1.7753,0.001875,,prima_misura,si,0.05,,ok,prima misura: nessun atteso sul numero (collaudo di sola configurazione)
+9,N1K01,N1_k01_m0107,107,prima_misura,,1.4883,0.0385,,prima_misura,si,1.525,,ok,prima misura: nessun atteso sul numero (collaudo di sola configurazione) ; divergenze 1.525% > 1%
+10,N1K03,N1_k03_m0042,42,prima_misura,,2.6946,0.0,,prima_misura,si,2.2,,ok,prima misura: nessun atteso sul numero (collaudo di sola configurazione) ; divergenze 2.2% > 1%
+11,N1K03,N1_k03_m0101,101,prima_misura,,2.1606,0.000125,,prima_misura,si,0.062,,ok,prima misura: nessun atteso sul numero (collaudo di sola configurazione)
+12,N1K03,N1_k03_m0102,102,prima_misura,,2.5882,0.0,,prima_misura,si,1.312,,ok,prima misura: nessun atteso sul numero (collaudo di sola configurazione) ; divergenze 1.312% > 1%
+13,N1K03,N1_k03_m0103,103,prima_misura,,2.8326,0.0,,prima_misura,si,0.0,,ok,prima misura: nessun atteso sul numero (collaudo di sola configurazione)
+14,N1K03,N1_k03_m0104,104,prima_misura,,2.4116,0.000125,,prima_misura,si,0.0,,ok,prima misura: nessun atteso sul numero (collaudo di sola configurazione)
+15,N1K03,N1_k03_m0105,105,prima_misura,,2.0903,0.00025,,prima_misura,si,0.263,,ok,prima misura: nessun atteso sul numero (collaudo di sola configurazione)
+16,N1K03,N1_k03_m0106,106,prima_misura,,2.0178,0.00275,,prima_misura,si,0.125,,ok,prima misura: nessun atteso sul numero (collaudo di sola configurazione)
+17,N1K03,N1_k03_m0107,107,prima_misura,,2.0891,0.004875,,prima_misura,si,0.263,,ok,prima misura: nessun atteso sul numero (collaudo di sola configurazione)
+18,N1K06,N1_k06_m0042,42,prima_misura,,2.5505,0.000125,,prima_misura,si,1.25,,ok,prima misura: nessun atteso sul numero (collaudo di sola configurazione) ; divergenze 1.25% > 1%
+19,N1K06,N1_k06_m0101,101,prima_misura,,2.2385,0.0,,prima_misura,si,0.062,,ok,prima misura: nessun atteso sul numero (collaudo di sola configurazione)
+20,N1K06,N1_k06_m0102,102,prima_misura,,2.3005,0.0,,prima_misura,si,2.938,,ok,prima misura: nessun atteso sul numero (collaudo di sola configurazione) ; divergenze 2.938% > 1%
+21,N1K06,N1_k06_m0103,103,prima_misura,,2.708,0.0,,prima_misura,si,0.0,,ok,prima misura: nessun atteso sul numero (collaudo di sola configurazione)
+22,N1K06,N1_k06_m0104,104,prima_misura,,2.7512,0.0,,prima_misura,si,0.0,,ok,prima misura: nessun atteso sul numero (collaudo di sola configurazione)
+23,N1K06,N1_k06_m0105,105,prima_misura,,1.9569,0.0005,,prima_misura,si,0.487,,ok,prima misura: nessun atteso sul numero (collaudo di sola configurazione)
+24,N1K06,N1_k06_m0106,106,prima_misura,,2.0924,0.002125,,prima_misura,si,0.025,,ok,prima misura: nessun atteso sul numero (collaudo di sola configurazione)
+25,N1K06,N1_k06_m0107,107,prima_misura,,1.8107,0.028625,,prima_misura,si,0.5,,ok,prima misura: nessun atteso sul numero (collaudo di sola configurazione)

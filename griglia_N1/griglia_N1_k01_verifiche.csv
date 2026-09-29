@@ -1,0 +1,9 @@
+quando,n,codice,nome,seed_mondo,regola,atteso,ottenuto,pit,scostamento_pct,esito_scostamento,ammissibile,divergenze_pct,problemi_config,esito,messaggio
+2026-09-22 20:02:36,2,N1K01,N1_k01_m0042,42,prima_misura,,1.8508,0.00025,,prima_misura,si,1.562,,ok,prima misura: nessun atteso sul numero (collaudo di sola configurazione) ; divergenze 1.562% > 1%
+2026-09-22 20:12:26,3,N1K01,N1_k01_m0101,101,prima_misura,,1.717,0.001125,,prima_misura,si,0.212,,ok,prima misura: nessun atteso sul numero (collaudo di sola configurazione)
+2026-09-22 20:22:33,4,N1K01,N1_k01_m0102,102,prima_misura,,1.7472,0.008875,,prima_misura,si,1.625,,ok,prima misura: nessun atteso sul numero (collaudo di sola configurazione) ; divergenze 1.625% > 1%
+2026-09-22 20:32:24,5,N1K01,N1_k01_m0103,103,prima_misura,,1.9232,0.0,,prima_misura,si,0.025,,ok,prima misura: nessun atteso sul numero (collaudo di sola configurazione)
+2026-09-22 20:42:19,6,N1K01,N1_k01_m0104,104,prima_misura,,2.0654,0.0,,prima_misura,si,0.013,,ok,prima misura: nessun atteso sul numero (collaudo di sola configurazione)
+2026-09-22 20:52:16,7,N1K01,N1_k01_m0105,105,prima_misura,,1.8985,0.0,,prima_misura,si,0.237,,ok,prima misura: nessun atteso sul numero (collaudo di sola configurazione)
+2026-09-22 21:02:30,8,N1K01,N1_k01_m0106,106,prima_misura,,1.7753,0.001875,,prima_misura,si,0.05,,ok,prima misura: nessun atteso sul numero (collaudo di sola configurazione)
+2026-09-22 21:12:29,9,N1K01,N1_k01_m0107,107,prima_misura,,1.4883,0.0385,,prima_misura,si,1.525,,ok,prima misura: nessun atteso sul numero (collaudo di sola configurazione) ; divergenze 1.525% > 1%

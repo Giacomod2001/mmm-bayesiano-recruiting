@@ -1,0 +1,9 @@
+quando,n,codice,nome,seed_mondo,regola,atteso,ottenuto,pit,scostamento_pct,esito_scostamento,ammissibile,divergenze_pct,problemi_config,esito,messaggio
+2026-09-17 00:47:44,1,D10,D10_cal4_rot0_m0042,42,prima_misura,,1.4588,0.01125,,prima_misura,si,0.025,,ok,prima misura: nessun atteso sul numero (collaudo di sola configurazione)
+2026-09-17 00:59:42,2,D10,D10_cal4_rot1_m0101,101,prima_misura,,1.3608,0.049875,,prima_misura,si,0.025,,ok,prima misura: nessun atteso sul numero (collaudo di sola configurazione)
+2026-09-17 01:10:14,3,D10,D10_cal4_rot2_m0102,102,prima_misura,,1.3406,0.0505,,prima_misura,si,2.45,,ok,prima misura: nessun atteso sul numero (collaudo di sola configurazione) ; divergenze 2.45% > 1%
+2026-09-17 01:20:35,4,D10,D10_cal4_rot3_m0103,103,prima_misura,,1.4741,0.013125,,prima_misura,si,0.037,,ok,prima misura: nessun atteso sul numero (collaudo di sola configurazione)
+2026-09-17 01:32:15,5,D10,D10_cal4_rot4_m0104,104,prima_misura,,1.5174,0.008625,,prima_misura,si,0.05,,ok,prima misura: nessun atteso sul numero (collaudo di sola configurazione)
+2026-09-17 01:42:23,6,D10,D10_cal4_rot5_m0105,105,prima_misura,,1.2235,0.1495,,prima_misura,si,0.613,,ok,prima misura: nessun atteso sul numero (collaudo di sola configurazione)
+2026-09-17 01:52:23,7,D10,D10_cal4_rot6_m0106,106,prima_misura,,1.4824,0.015,,prima_misura,si,0.15,,ok,prima misura: nessun atteso sul numero (collaudo di sola configurazione)
+2026-09-17 02:02:36,8,D10,D10_cal4_rot0_m0107,107,prima_misura,,1.4186,0.0345,,prima_misura,si,0.138,,ok,prima misura: nessun atteso sul numero (collaudo di sola configurazione)

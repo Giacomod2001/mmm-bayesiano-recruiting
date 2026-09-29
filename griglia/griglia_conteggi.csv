@@ -1,0 +1,24 @@
+disegno,insieme,N,soglia_identificazione,C_tot,C_k,larghezza_mediana_k,rapporto_mediano,rho_mediano,N_ok
+D0,tutti,8,6,0,,,2.2226,-0.0357,0
+D0,ammissibili,8,6,0,,,2.2226,-0.0357,0
+D1,tutti,8,6,2,Google Ads=6;LinkedIn Ads=8,Google Ads=0.8603;LinkedIn Ads=2.0158,1.8304,0.3392,2
+D1,ammissibili,8,6,2,Google Ads=6;LinkedIn Ads=8,Google Ads=0.8603;LinkedIn Ads=2.0158,1.8304,0.3392,2
+D7,tutti,8,6,1,Google Ads=6,Google Ads=1.0528,2.0339,0.0714,1
+D7,ammissibili,8,6,1,Google Ads=6,Google Ads=1.0528,2.0339,0.0714,1
+D2,tutti,8,6,4,Altre job board=8;Google Ads=6;Indeed=7;Jooble=8;LinkedIn Ads=6;Meta Ads=7;Subito Lavoro=8,Altre job board=3.9668;Google Ads=1.0387;Indeed=1.6168;Jooble=4.3889;LinkedIn Ads=2.3907;Meta Ads=1.6522;Subito Lavoro=3.4573,1.3838,0.1071,7
+D2,ammissibili,8,6,4,Altre job board=8;Google Ads=6;Indeed=7;Jooble=8;LinkedIn Ads=6;Meta Ads=7;Subito Lavoro=8,Altre job board=3.9668;Google Ads=1.0387;Indeed=1.6168;Jooble=4.3889;LinkedIn Ads=2.3907;Meta Ads=1.6522;Subito Lavoro=3.4573,1.3838,0.1071,7
+D3,tutti,21,16,1,Altre job board=1;Google Ads=6;Indeed=1;Jooble=8;LinkedIn Ads=1;Meta Ads=1;Subito Lavoro=1,Altre job board=3.5424;Google Ads=0.764;Indeed=1.2413;Jooble=3.9499;LinkedIn Ads=2.0713;Meta Ads=0.9758;Subito Lavoro=3.2094,2.0531,-0.1429,0
+D3,ammissibili,21,16,1,Altre job board=1;Google Ads=6;Indeed=1;Jooble=8;LinkedIn Ads=1;Meta Ads=1;Subito Lavoro=1,Altre job board=3.5424;Google Ads=0.764;Indeed=1.2413;Jooble=3.9499;LinkedIn Ads=2.0713;Meta Ads=0.9758;Subito Lavoro=3.2094,2.0531,-0.1429,0
+D4,tutti,7,5,0,Google Ads=4;Indeed=5;Jooble=7,Google Ads=1.3772;Indeed=1.6687;Jooble=6.5044,2.0476,-0.1429,2
+D4,ammissibili,7,5,0,Google Ads=4;Indeed=5;Jooble=7,Google Ads=1.3772;Indeed=1.6687;Jooble=6.5044,2.0476,-0.1429,2
+D5,tutti,8,6,0,Altre job board=8;Google Ads=2;Indeed=7;Jooble=8;LinkedIn Ads=8;Meta Ads=8;Subito Lavoro=8,Altre job board=4.3553;Google Ads=1.2024;Indeed=3.6298;Jooble=4.3771;LinkedIn Ads=3.4994;Meta Ads=2.6025;Subito Lavoro=3.9928,2.1811,-0.2678,6
+D5,ammissibili,8,6,0,Altre job board=8;Google Ads=2;Indeed=7;Jooble=8;LinkedIn Ads=8;Meta Ads=8;Subito Lavoro=8,Altre job board=4.3553;Google Ads=1.2024;Indeed=3.6298;Jooble=4.3771;LinkedIn Ads=3.4994;Meta Ads=2.6025;Subito Lavoro=3.9928,2.1811,-0.2678,6
+D6,tutti,8,6,0,Google Ads=4,Google Ads=1.1789,2.0088,-0.1071,0
+D6,ammissibili,8,6,0,Google Ads=4,Google Ads=1.1789,2.0088,-0.1071,0
+D8,tutti,8,6,0,Google Ads=5,Google Ads=0.8179,2.0477,-0.0357,0
+D8,ammissibili,8,6,0,Google Ads=5,Google Ads=0.8179,2.0477,-0.0357,0
+D9,tutti,3,2,0,,,2.4593,-0.7857,0
+D9,ammissibili,3,2,0,,,2.4593,-0.7857,0
+D7_vs_D1,tutti,8,6,,W7=2,,,,
+D2_vs_D7,tutti,8,6,,W2=5,,,,
+D1_vs_D4,tutti,8,6,,W=7,,,,
